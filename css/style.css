@@ -1,0 +1,300 @@
+
+body {
+font-size: 14px;
+font-family: "TT Lakes", sans-serif;
+margin: 0;
+}
+.container {
+    max-width: 767px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.page-header__inner {
+    background-color: #FFF;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+.menu-left {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.menu-left__items:not(:last-child) {
+    padding-right: 15px;
+}
+.menu-left__border {
+    border-left: 2px solid #EAEAEA;
+    height: 32px;
+    border-radius: 1px;
+}
+.menu-left__items--display--none {
+    display: none;
+}
+.menu-center--display--none {
+    display: none;
+}
+.menu-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.menu-right__items {
+    padding-left: 15px;
+}
+.page-main__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.features__inner {
+    padding-top: 25px;
+    background-color: #F8F8F8;
+}
+.features__menu-list--display--none {
+    display: none;
+}
+.features__top {
+    display: flex;
+    overflow: hidden;
+}
+.features__title-item {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    padding-left: 15px;
+    border-radius: 2px;
+    margin: 0;
+}
+.features__border {
+    border-left: 8px solid #41F6D7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    position: relative;
+    left: -4px;
+}
+.features__slider {
+    margin-top: 20px;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+
+.features__slider-buttons {
+    display:flex;
+    margin-bottom: 15px;
+}
+.features__slider-link {
+    display: inline-block;
+    white-space: nowrap;
+    max-height: 40px;
+    padding: 5px 25px 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.features__slider-link--active {
+    border: 2px solid #B8FFEC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    background-color: #fff;
+    padding-right: 15px;
+
+}
+.features__slider::after {
+    content: "";
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.features__content-text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    margin-left: 25px;
+}
+.featerus__content-text--display--none {
+    display: none;
+}
+.features__content-link {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-decoration: none;
+    padding-left: 30px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    background: url("../img/content/expand.svg") no-repeat;
+}
+.features__content-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 767px) {
+    .container {
+        min-width: 768px;
+        max-width: 1119px;
+    }
+    .menu-left {
+        margin-left: 25px;
+    }
+    .menu-left__items--display--none {
+        display: block;
+    }
+    .menu-left__border--display--none {
+        display: none;
+    }
+    .menu-center--display--none {
+        display: block;
+    }
+    .menu-center {
+        display: flex;
+        margin-left: auto;
+        list-style: none;
+        align-items: center;
+    }
+    .menu-center__items {
+        padding-left: 16px;
+    }
+    .menu-center__border {
+        border-right: 2px solid #EAEAEA;
+        height: 32px;
+        border-radius: 1px;
+    }
+    .menu-right {
+        margin-right: 25px;
+    }
+    .features__menu-list--display--none {
+        display: none;
+    }
+    .featerus__content-text--display--none {
+        display: block;
+    }
+    .features__content {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 40px;
+        margin-right: 25px;
+    }
+    .features__content-item {
+        flex-basis: 100%;
+    }
+    .features__content-text {
+        margin-top: 0;
+    }
+    .text-content--display--none {
+        display: none;
+    }
+    .features__content-img {
+        border-radius: 5px;
+    }
+}
+
+
+@media (min-width: 1120px){
+    .container {
+        min-width: 1120px;
+        max-width: 1365px;
+    }
+    .page-header__inner {
+        display: none;
+    }
+    .features__menu--hidden {
+        display: block;
+    }
+    .features__top {
+        display: flex;
+        margin-top: 14px;
+    }
+    .features__menu-list {
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        align-self: center;
+        list-style: none;
+        display: flex;
+    }
+    .features__menu-item {
+        margin-right: 27px;
+        display: flex;
+    }
+
+    .text-content--display--none {
+        display: inline;
+    }
+    .features__link {
+        text-decoration: none;
+        letter-spacing: -0.2px;
+        color: black;
+        height: 40px;
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+    }
+    .features__link-img {
+        margin-left: 15px;
+    }
+    .features__slider::after {
+        content: "";
+        width: 24px;
+        height: 40px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    .features__slider {
+        margin-top: 20px;
+        overflow: hidden;
+        overflow-x: scroll;
+        margin-left: 25px;
+        margin-right: 25px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        overflow: visible;
+        margin-top: 5px;
+    }
+    .features__slider-buttons {
+        display:flex;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+}
