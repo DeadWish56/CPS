@@ -1,10 +1,140 @@
 
-body {
+.body {
 font-size: 14px;
 font-family: "TT Lakes", sans-serif;
 margin: 0;
-padding: 0px;
+padding: 0;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.page-header__wrapper {
+    min-width: 320px;
+    max-width: 767px;
+    height: 88px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.page-header__button {
+    background: url("../img/icon-burger.svg") no-repeat 50% 50% #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 16px 0 16px;
+}
+.page-header__header-nav {
+    margin-left: auto;
+    display: flex;
+}
+.header-nav__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+.header-nav__list--right {
+    margin-right: 16px;
+}
+.header-nav__list--left {
+    display: none;
+}
+.header-nav__link {
+    display: block;
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.header-nav__link--repair {
+    background-image: url("../img/icon-repair.svg");
+    margin-right: 16px;
+}
+.header-nav__link--checkstatus {
+    background-image: url("../img/icon-search.svg");
+}
+.page-main__main-menu {
+    min-width: 320px;
+    max-width: 767px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+}
+.main-menu__title {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    margin: 0 0 14px 16px;
+    padding-top: 24px;
+}
+.main-menu__menu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: scroll;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+.menu-list__buttton {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    white-space: nowrap;
+    padding: 8px 16px;
+    border: none;
+    background-color: #F8F8F8;
+}
+.menu-list__buttton--active {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    padding: 8px 22px;
+}
+.page-main__about {
+    min-width: 320px;
+    max-width: 767px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    padding-bottom: 35px;
+}
+.about__content-wrapper {
+    margin-left: 16px;
+    padding-bottom: 16px;
+}
+.about__content-text {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    padding-top: 24px;
+    padding-right: 16px;
+}
+.about__content-link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/*
 .container {
     max-width: 767px;
     min-width: 320px;
