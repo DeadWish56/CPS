@@ -9,65 +9,108 @@
     <link rel="stylesheet" href="fonts/TTlakes/stylesheet.css">
     <meta name="viewport" content="width=device-width">
   </head>
-  <body>
-<header class="page-header">
+  <body class="body">
     <div class="container">
-      <div class="page-header__inner">
-        <nav class="page-header__menu ">
-          <ul class="page-header__menu-left-list">
-            <li class="page-header__menu-left-items">
-              <a href="#" class="page-header__menu-left-link">
-              <img src="img/menu/burger.png" alt="Всплывающее меню" class="page-header__menu-left-img">
+      <header class="header body__header header--display--none">
+        <div class="burger">
+          <button class="burger__button">
+            <img src="img/icon-burger.svg" alt="Всплывающее меню" class="burger__img">
+          </button>
+        </div>
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/logo.svg" alt="Логотип сервисного центра" class="logo__img">
+          </a>
+        </div>
+        </li>
+        <nav class="nav header__nav">
+          <ul class="nav__menu-left-list nav__menu-left-list--display--none">
+            <li class="nav__menu-left-item">
+              <a href="#" class="nav__menu-left-link">
+                <img src="img/icon-phohe.svg" alt="Заказать обратный звонок" class="nav__menu-left-img">
               </a>
             </li>
-            <li class="page-header__menu-left-items page-header__menu-left-items--display--none">
-              <div class="page-header__menu-left-border"></div>
-              </li>
-            <li class="page-header__menu-left-items">
-                <a href="#" class="page-header__menu-left-link">
-                <img src="img/menu/Group.png" alt="Логотип сервисного центра" class="page-header__menu-left-img">
-                </a>
+            <li class="nav__menu-left-item">
+              <a href="#" class="nav__menu-left-link">
+                <img src="img/icon-message.svg" alt="Чат с техподдержкой" class="nav__menu-left-img">
+              </a>
             </li>
-            <li class="page-header__menu-left-items">
-            <div class="page-header__menu-left-border page-header__menu-left-border--display--none"></div>
+            <li class="nav__menu-left-item">
+              <a href="#" class="nav__menu-left-link">
+                <img src="img/icon-profille.svg" alt="Профиль" class="nav__menu-left-img">
+              </a>
             </li>
           </ul>
-          <ul class="page-header__menu-center page-header__menu-center--display--none">
-            <li class="page-header__menu-center-items">
-              <a href="#" class="page-header__menu-center-link">
-                <img src="img/menu/call.png" alt="Заказать обратный звонок" class="page-header__menu-center-img">
+          <ul class="nav__menu-right-list">
+            <li class="nav__menu-right-item">
+              <a href="#" class="nav__menu-right-link">
+                <img src="img/icon-repair.svg" alt="Заявка на ремонт" class="nav__menu-right-img">
               </a>
             </li>
-            <li class="page-header__menu-center-items">
-              <a href="#" class="page-header__menu-center-link">
-                <img src="img/menu/chat.png" alt="Чат с техподдержкой" class="page-header__menu-center-img">
-              </a>
-            </li>
-            <li class="page-header__menu-center-items">
-              <a href="#" class="page-header__menu-center-link">
-                <img src="img/menu/profile.png" alt="Профиль" class="page-header__menu-center-img">
-              </a>
-            </li>
-            <li class="page-header__menu-center-items">
-            <div class="page-header__menu-center-border"></div>
-            </li>
-          </ul>
-          <ul class="page-header__menu-right">
-            <li class="page-header__menu-right-items">
-              <a href="#" class="page-header__menu-right-link">
-                <img src="img/menu/repair.png" alt="Заявка на ремонт" class="page-header__menu-right-img">
-              </a>
-            </li>
-            <li class="page-header__menu-right-items">
-              <a href="#" class="page-header__menu-right-link">
-                <img src="img/menu/checkstatus.png" alt="Проверка статуса ремонта" class="page-header__menu-right-img">
+            <li class="nav__menu-right-item">
+              <a href="#" class="nav__menu-right-link">
+                <img src="img/icon-search.svg" alt="Проверка статуса ремонта" class="nav__menu-right-img">
               </a>
             </li>
           </ul>
         </nav>
-      </div>
+      </header>
+      <main class="main body__main">
+        <h1 class="title--visually-hidden">Сервисный центр CPS</h1>
+        <section class="main-menu">
+          <div class="page-top main__page-top">
+          <h2 class="title page-top__title">Услуги и сервисы</h2>
+          <nav class="nav page-top__nav page-top__nav--display--none">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">Оставить заявку</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link">Статус ремонта</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+          <ul class="menu-list main-menu__menu-list">
+            <li class="menu-list__item">
+              <button class="menu-list__button menu-list__button--active">Ремонтируемые бренды</button>
+            </li>
+            <li class="menu-list__item">
+              <button class="menu-list__button">Дополнительные услуги</button>
+            </li>
+            <li class="menu-list__item">
+              <button class="menu-list__button">Цены на услуги</button>
+            </li>
+            <li class="menu-list__item">
+              <button class="menu-list__button">Адреса сервисных центров</button>
+            </li>
+            <li class="menu-list__item">
+              <button class="menu-list__button">Специальные цены</button>
+            </li>
+            <li class="menu-list__item">
+              <button class="menu-list__button">Отзывы</button>
+            </li>
+          </ul>
+  
+          <article class="about main__about">
+            <h2 class="titlte title--visually-hidden">О нас</h2>
+            <div class="about__content">
+              <p class="about__text-content">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+              </p>
+              <p class="about__text-content about__text-content--display--none">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного парнера <span class="about__text-content about__text-content--display">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+              </p>
+              <a href="" class="about__link">Читать далее</a>
+            </div>
+              <img src="img/cps.jpg" alt="вход в офис CPS с режимом работы" class="about__img">
+          </article>
+        </section>
+      </main>
     </div>
-</header>
+  </body>
+  <!--
+    
   <main class="page-main">
     <h1 class="page-main__title">Сервисный центр CPS</h1>
   <section class="features">
@@ -121,5 +164,5 @@
     </div>
   </section>
   </main>
-  </body>
+-->
 </html>
