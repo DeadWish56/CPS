@@ -1,0 +1,28 @@
+.about__wrapper {
+    min-width: 320px;
+    max-width: 767px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    padding-bottom: 35px;
+}
+.about__content-wrapper {
+    margin-left: 16px;
+    padding-bottom: 16px;
+}
+.about__content-text {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    padding-top: 24px;
+    padding-right: 16px;
+}
+.about__content-link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+    text-decoration: none;
+}
