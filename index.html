@@ -8,7 +8,7 @@
   <meta name="keywords" content="Ремонт, замена, ремонт по гарантии, телефоны, ноутбуки, бытовая техника">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/page-header.css">
-  <link rel="stylesheet" href="css/header-nav.css">
+  <link rel="stylesheet" href="css/navigation-list.css">
   <link rel="stylesheet" href="css/main-menu.css">
   <link rel="stylesheet" href="css/menu-list.css">
   <link rel="stylesheet" href="css/about.css">
@@ -16,31 +16,31 @@
   <meta name="viewport" content="width=device-width">
 </head>
 
-<body class="body">
+<body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-    <button class="button page-header__button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="page-header__button" title="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
     <a href="" class="logo page-header__logo">
       <img src="img/logo.svg" alt="сервисный центр CPS">
     </a>
-    <nav class=" header-nav page-header__header-nav">
-      <ul class="header-nav__list header-nav__list--left menu-list">
-        <li class="header-nav__item">
-          <a href="#" class="header-nav__link"><span class="visually-hidden">Записаться на ремонт</span></a>
+    <nav class="page-header__header-nav">
+      <ul class="navigation-list page-header__nav-list page-header__nav-list page-header__nav-list--left">
+        <li class="navigation-list__item">
+          <a href="#" class="navigation-list__link navigation-list__link--phone" title="Заказать звонок"><span class="visually-hidden">Заказать звонок</span></a>
         </li>
-        <li class="header-nav__item">
-          <a href="#" class="header-nav__link"><span class="visually-hidden">Узнать статус ремонта</span></a>
+        <li class="navigation-list__item">
+          <a href="#" class="navigation-list__link navigation-list__link--message" title="Чат с поддержкой"><span class="visually-hidden">Чат с поддержкой</span></a>
         </li>
-        <li class="header-nav__item">
-          <a href="#" class="header-nav__link"><span class="visually-hidden">Узнать статус ремонта</span></a>
+        <li class="navigation-list__item">
+          <a href="#" class="navigation-list__link navigation-list__link--profille" title="Профиль"><span class="visually-hidden">Профиль</span></a>
         </li>
       </ul>
-      <ul class="header-nav__list header-nav__list--right">
-        <li class="header-nav__item">
-          <a href="#" class="header-nav__link header-nav__link--repair" title="Записаться на ремонт"><span class="visually-hidden">Записаться на ремонт</span></a>
+      <ul class="navigation-list page-header__nav-list page-header__nav-list--right">
+        <li class="navigation-list__item">
+          <a href="#" class="navigation-list__link navigation-list__link--repair" title="Записаться на ремонт"><span class="visually-hidden">Записаться на ремонт</span></a>
         </li>
-        <li class="header-nav__item">
-          <a href="#" class="header-nav__link header-nav__link--checkstatus" title="Узнать статус ремонта"><span class="visually-hidden">Узнать статус ремонта</span></a>
+        <li class="navigation-list__item">
+          <a href="#" class="navigation-list__link navigation-list__link--checkstatus" title="Узнать статус ремонта"><span class="visually-hidden">Узнать статус ремонта</span></a>
         </li>
       </ul>
     </nav>
@@ -81,7 +81,8 @@
             <p class="about__content-text">
               Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
             </p>
-            <a href="#" class="about__content-link">Читать далее</a>
+            <p class="about__content-text about__content-text--display--block">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+            <button class="about__content-button">Читать далее</button>
             </div>
             <img class="about__content-img" src="img/cps320.jpg" alt="вход в офис CPS с графиком работы" width="100%" height="auto">
           </div>

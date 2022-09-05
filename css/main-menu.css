@@ -1,7 +1,4 @@
 .main-menu__wrapper {
-    min-width: 320px;
-    max-width: 767px;
-    margin: 0 auto;
     background-color: #F8F8F8;
 }
 .main-menu__title {
@@ -15,9 +12,16 @@
 .main-menu__menu-list {
     margin: 0;
     padding: 0;
-    list-style: none;
     overflow-x: scroll;
     margin-left: 16px;
     display: flex;
     align-items: center;
+}
+@media (min-width: 768px) {
+    .main-menu__title {
+        margin-left: 24px;
+    }
+    .main-menu__menu-list {
+        margin-left: 24px;
+    }
 }
