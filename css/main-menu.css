@@ -1,0 +1,27 @@
+.main-menu__wrapper {
+    background-color: #F8F8F8;
+}
+.main-menu__title {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    margin: 0 0 14px 16px;
+    padding-top: 24px;
+}
+.main-menu__menu-list {
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .main-menu__title {
+        margin-left: 24px;
+    }
+    .main-menu__menu-list {
+        margin-left: 24px;
+    }
+}
