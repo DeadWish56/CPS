@@ -28,7 +28,11 @@
     border: none;
     background-color: #F8F8F8;
     font-family: "TT Lakes", sans-serif;
-}.about__content-button::before {
+}
+.about__content-button:hover {
+    opacity: 0.5;
+}
+.about__content-button::before {
     content: "";
     width: 24px;
     height: 24px;

@@ -15,6 +15,9 @@
     background-repeat: no-repeat;
     background-position: 50%;
 }
+.nav-list__btn:hover {
+    opacity: 0.3;
+}
 .nav-list__btn--repair::after {
     background-image: url("../img/icon-repair.svg");
 }
