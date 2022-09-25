@@ -1,0 +1,32 @@
+.menu__body {
+    min-width: 320px;
+    max-width: 1366px;
+    margin: 0px auto;
+}
+.menu__main {
+    width: 320px;
+    box-shadow: 
+    16px 0px 52px 0px #0E185033,
+    -2px 0px 4px 0px #454F7E05;
+}
+.menu__header {
+    display: flex;
+    align-items: center;
+    height: 88px;
+}
+.menu__header-logo {
+margin-left: 16px;
+margin-right: auto;
+}
+.menu__header-btn--close-icon {
+    margin-left: 24px;
+    background-image: url("../img/close-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.menu__header-btn--search-icon {
+    margin-right: 24px;
+    background-image: url("../img/search-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}

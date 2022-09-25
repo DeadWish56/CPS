@@ -1,9 +1,14 @@
 .nav-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .nav-list__btn {
     border: none;
-    background-color: #F8F8F8;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
 }
 .nav-list__btn::after {
     content: "";
@@ -13,7 +18,7 @@
     height: 40px;
     border-radius: 50%;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 50% 50%;
 }
 .nav-list__btn:hover {
     opacity: 0.3;
@@ -21,7 +26,7 @@
 .nav-list__btn--repair::after {
     background-image: url("../img/icon-repair.svg");
 }
-.nav-list__btn--checkstatus::after {
+.nav-list__btn--checkstatus:after {
     background-image: url("../img/icon-search.svg");
 }
 .nav-list__btn--phone::after {
@@ -33,12 +38,19 @@
 .nav-list__btn--profille::after {
     background-image: url("../img/icon-profille.svg");
 }
-.nav-list__btn-text {
-    margin-right: 8px;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: right;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-    font-weight: 500;
+
+@media (min-width: 1120px) {
+    .nav-list__btn-text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        font-weight: 500;
+        margin-right: 8px;
+        margin-left: 16px;
+    }
+.nav-list__btn {
+    background-color: #f8f8f8;
+}
 }

@@ -1,0 +1,11 @@
+.title {
+    color: #1B1C21;
+    letter-spacing: -0.6px;
+
+}
+.title::before {
+    content: "";
+    position: absolute;
+    border-left: 8px solid #41F6D7;
+    border-radius: 4px;
+}

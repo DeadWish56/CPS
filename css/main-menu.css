@@ -2,13 +2,17 @@
     background-color: #F8F8F8;
 }
 .main-menu__title {
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.6px;
-    color: #1B1C21;
     margin: 0 0 14px 16px;
     padding-top: 24px;
+    font-size: 28px;
+    line-height: 40px;
 }
+.main-menu__title::before {
+    height: 40px;
+    left: -4px;
+}
+
+
 .main-menu__nav--display--none {
     display: none;
 }
