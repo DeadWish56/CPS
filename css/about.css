@@ -65,9 +65,17 @@
     }
 }
 @media (min-width: 1120px) {
+    .about__content {
+        padding-top: 5px;
+    }
+    .about__content-wrapper {
+        flex-basis: 100%;
+    }
     .about__content-text {
         padding-right: 48px;
         margin-left: 32px;
+        padding-top: 10px;
+        width: auto;
     }
     .about__content-button {
         margin-left: 32px;

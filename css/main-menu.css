@@ -46,7 +46,7 @@
     }
     .main-menu__menu-list {
         margin-left: 32px;
-        overflow: hidden;
-        width: 1120px;
+        flex-wrap: wrap;
     }
+    
 }
