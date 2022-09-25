@@ -1,6 +1,8 @@
 .page-main__top {
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 .main-menu__title::before {
     content: "";
@@ -9,4 +11,10 @@
     height: 40px;
     border-radius: 4px;
     left: -4px;
+}
+@media (min-width: 1120px) {
+    .page-main__top {
+        display: flex;
+        align-items: center;
+    }
 }

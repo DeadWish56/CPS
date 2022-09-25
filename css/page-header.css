@@ -25,7 +25,7 @@
 }
 .page-header__nav-list--left {
     display: none;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .page-header__nav-list--right::before {
     content: '';
@@ -33,6 +33,7 @@
     border-radius: 1px;
     height: 32px;
     align-self: center;
+    margin-right: 10px;
 }
 @media (min-width: 768px) {
     .page-header__button {
@@ -55,4 +56,10 @@
         align-self: center;
         margin-right: 20px;
     }
+}
+@media (min-width: 1120px) {
+    .page-header--display--none {
+        display: none;
+    }
+    
 }

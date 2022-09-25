@@ -26,6 +26,12 @@ max-width: 767px;
         max-width: 1119px;
     }
 }
+@media (min-width: 1120px) {
+    .page__body {
+        min-width: 1120px;
+        min-width: 1365px;
+    }
+}
 
 
 

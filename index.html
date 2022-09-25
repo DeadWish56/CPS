@@ -16,32 +16,31 @@
   <link rel="stylesheet" href="fonts/TTlakes/stylesheet.css">
   <meta name="viewport" content="width=device-width">
 </head>
-
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--display--none">
     <div class="page-header__wrapper">
     <button class="nav-button modal-button page-header__button" title="Открыть меню"><span class="page--visually-hidden">Открыть меню</span></button>
     <a href="" class="logo page-header__logo">
       <img src="img/logo.svg" alt="сервисный центр CPS">
     </a>
-    <nav class="page-header__header-nav">
-      <ul class="navigation-list page-header__nav-list page-header__nav-list page-header__nav-list--left">
-        <li class="navigation-list__item">
-          <a href="#" class="navigation-list__link navigation-list__link--phone" title="Заказать звонок"><span class="page--visually-hidden">Заказать звонок</span></a>
+    <nav class="nav page-header__header-nav">
+      <ul class="nav-list page-header__nav-list page-header__nav-list--left">
+        <li class="nav-list__item">
+          <button class="nav-list__btn nav-list__btn--phone" title="Заказать звонок"><span class="page--visually-hidden">Заказать звонок</span></button>
         </li>
-        <li class="navigation-list__item">
-          <a href="#" class="navigation-list__link navigation-list__link--message" title="Чат с поддержкой"><span class="page--visually-hidden">Чат с поддержкой</span></a>
+        <li class="nav-list__item">
+          <button class="nav-list__btn nav-list__btn--message" title="Чат с поддержкой"><span class="page--visually-hidden">Чат с поддержкой</span></button>
         </li>
-        <li class="navigation-list__item">
-          <a href="#" class="navigation-list__link navigation-list__link--profille" title="Профиль"><span class="page--visually-hidden">Профиль</span></a>
+        <li class="nav-list__item">
+          <button class="nav-list__btn nav-list__btn--profille" title="Профиль"><span class="page--visually-hidden">Профиль</span></button>
         </li>
       </ul>
-      <ul class="navigation-list page-header__nav-list page-header__nav-list--right">
-        <li class="navigation-list__item">
-          <a href="#" class="navigation-list__link navigation-list__link--repair" title="Записаться на ремонт"><span class="page--visually-hidden">Записаться на ремонт</span></a>
+      <ul class="nav-list page-header__nav-list page-header__nav-list--right">
+        <li class="nav-list__item">
+          <button class="nav-list__btn nav-list__btn--repair" title="Записаться на ремонт"><span class="page--visually-hidden">Оставить заявку</span></button>
         </li>
-        <li class="navigation-list__item">
-          <a href="#" class="navigation-list__link navigation-list__link--checkstatus" title="Узнать статус ремонта"><span class="page--visually-hidden">Узнать статус ремонта</span></a>
+        <li class="nav-list__item">
+          <button class="nav-list__btn nav-list__btn--checkstatus" title="Узнать статус ремонта"><span class="page--visually-hidden">Статус ремонта</span></button>
         </li>
       </ul>
     </nav>
@@ -53,6 +52,14 @@
           <div class="main-menu__wrapper">
             <div class="page-main__top">
         <h2 class="main-menu__title">Услуги и сервисы</h2>
+        <ul class="nav-list main-menu__nav main-menu__nav--display--none">
+          <li class="nav-list__item">
+            <button class="nav-list__btn nav-list__btn--repair naim-menu__nav-btn"><span class="nav-list__btn-text">Оставить заявку</span></button>
+          </li>
+          <li class="nav-list__item">
+            <button class="nav-list__btn nav-list__btn--checkstatus naim-menu__nav-btn"><span class="nav-list__btn-text">Статус ремонта</span></button>
+          </li>
+        </ul>
             </div>
         <ul class="menu-list main-menu__menu-list">
           <li class="menu-list__item">
@@ -84,7 +91,7 @@
             <p class="about__content-text">
               Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
             </p>
-            <p class="about__content-text about__content-text--display--block">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+            <p class="about__content-text about__content-text--display--block">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="about__content-text--display--none">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
             <button class="about__content-button">Читать далее</button>
             </div>
             <img class="about__content-img" src="img/cps320.jpg" alt="вход в офис CPS с графиком работы" width="100%" height="auto">

@@ -1,7 +1,12 @@
-.navigation-list {
+.nav-list {
     list-style: none;
 }
-.navigation-list__link {
+.nav-list__btn {
+    border: none;
+    background-color: #F8F8F8;
+}
+.nav-list__btn::after {
+    content: "";
     display: block;
     background-color: #FF3E79;
     width: 40px;
@@ -10,22 +15,27 @@
     background-repeat: no-repeat;
     background-position: 50%;
 }
-.navigation-list__link--repair {
+.nav-list__btn--repair::after {
     background-image: url("../img/icon-repair.svg");
-    margin-right: 16px;
-    margin-left: 20px;
 }
-.navigation-list__link--checkstatus {
+.nav-list__btn--checkstatus::after {
     background-image: url("../img/icon-search.svg");
 }
-.navigation-list__link--phone {
+.nav-list__btn--phone::after {
     background-image: url("../img/icon-phohe.svg");
-    margin-right: 16px;
 }
-.navigation-list__link--message {
+.nav-list__btn--message::after {
     background-image: url("../img/icon-message.svg");
-    margin-right: 16px;
 }
-.navigation-list__link--profille {
+.nav-list__btn--profille::after {
     background-image: url("../img/icon-profille.svg");
+}
+.nav-list__btn-text {
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
 }

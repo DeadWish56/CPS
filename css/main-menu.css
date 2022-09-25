@@ -9,6 +9,9 @@
     margin: 0 0 14px 16px;
     padding-top: 24px;
 }
+.main-menu__nav--display--none {
+    display: none;
+}
 .main-menu__menu-list {
     margin: 0;
     padding: 0;
@@ -23,5 +26,27 @@
     }
     .main-menu__menu-list {
         margin-left: 24px;
+    }
+}
+@media (min-width: 1120px) {
+    .main-menu__nav--display--none {
+        display: block;
+    }
+    .main-menu__title {
+        margin-left: 32px;
+    }
+    .main-menu__nav {
+        display: flex;
+        margin-left: auto;
+        margin-right: 42px;
+    }
+    .naim-menu__nav-btn {
+        display: flex;
+        align-items: center;
+    }
+    .main-menu__menu-list {
+        margin-left: 32px;
+        overflow: hidden;
+        width: 1120px;
     }
 }
