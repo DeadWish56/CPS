@@ -57,9 +57,12 @@ margin-right: auto;
     color: #1B1C21;
     line-height: 32px;
     font-weight: 500;
+    opacity: 1;
+    transition: 0.5s ease;
 }
 .menu__nav-button:hover {
     opacity: 0.5;
+    transition: 0.5s ease;
 }
 .menu__nav-button--active {
     color: #7E7E82;
@@ -95,9 +98,12 @@ margin-right: auto;
     font-weight: 500;
     color: #1B1C21;
     margin-bottom: 12px;
+    opacity: 1;
+    transition: 0.5s ease;
 }
 .footer__email:hover {
     opacity: 0.5;
+    transition: 0.5s ease;
 }
 .footer__tel {
     font-size: 24px;
@@ -106,9 +112,12 @@ margin-right: auto;
     font-weight: 600;
     color: #1B1C21;
     text-decoration: none;
+    opacity: 1;
+    transition: 0.5s ease;
 }
 .footer__tel:hover {
     opacity: 0.5;
+    transition: 0.5s ease;
 }
 .footer__lang-list {
     list-style: none;
@@ -125,10 +134,13 @@ margin-right: auto;
     line-height: 24px;
     letter-spacing: -0.2px;
     font-weight: 500;
+    opacity: 1;
+    transition: 0.5s ease;
 }
 .footer__lang-link--active {
     color: #7E7E82;
 }
 .footer__lang-link:hover {
     opacity: 0.5;
+    transition: 0.5s ease;
 }
