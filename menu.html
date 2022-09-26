@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/nav-list.css">
+    <link rel="stylesheet" href="css/page-header.css">
     <link rel="stylesheet" href="fonts/TTlakes/stylesheet.css">
     <title>Document</title>
 </head>
 <body class="menu__body">
 <main class="menu__main">
-<section>
+  <section class="menu__section">
   <header class="menu__header">
     <button class="btn menu__header-btn  menu__header-btn--close-icon"></button>
     <a href="" class="logo menu__header-logo">
@@ -20,27 +21,36 @@
 </header>
     <nav class="menu__nav">
         <ul class="menu__nav-list">
-          <li class="menu__nav-item menu__nav-item"><a href="#" class="menu__nav-link menu__nav-link--active">Ремонт техники</a></li>
-          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Услуги и сервисы</a></li>
-          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Корпоративным клиентам</a></li>
-          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Продавцам техники</a></li>
-          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Парнерам</a></li>
-          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Производителям</a></li>
-          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Наши сервисные центры</a></li>
-          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Контакты</a></li>
+          <li class="menu__nav-item menu__nav-item"><button class="menu__nav-button menu__nav-button--active">Ремонт техники</button></li>
+          <li class="menu__nav-item"><button class="menu__nav-button">Услуги и сервисы</button></li>
+          <li class="menu__nav-item"><button class="menu__nav-button">Корпоративным клиентам</button></li>
+          <li class="menu__nav-item"><button class="menu__nav-button">Продавцам техники</button></li>
+          <li class="menu__nav-item"><button class="menu__nav-button">Парнерам</button></li>
+          <li class="menu__nav-item"><button class="menu__nav-button">Производителям</button></li>
+          <li class="menu__nav-item"><button class="menu__nav-button">Наши сервисные центры</button></li>
+          <li class="menu__nav-item"><button class="menu__nav-button">Контакты</button></li>
         </ul>
     </nav>
-    <footer class="menu-footer">sd
-    <ul class="nav-list footer__nav-list">
-        <li class="nav-list__item">
+    <footer class="menu__footer">
+    <ul class="nav-list menu__footer-nav-list">
+        <li class="nav-list__item menu__footer-nav-item">
           <button class="nav-list__btn nav-list__btn--phone"></button>
         </li>
-        <li class="nav-list__item">
+        <li class="nav-list__item menu__footer-nav-item">
           <button class="nav-list__btn nav-list__btn--message"></button>
         </li>
-        <li class="nav-list__item">
+        <li class="nav-list__item menu__footer-nav-item">
           <button class="nav-list__btn nav-list__btn--profille"></button>
         </li>
+      </ul>
+      <address class="footer__addres">
+        <a href="mailto:mail@cps.com" class="footer__email">mail@cps.com</a>
+        <a href="tel:88008908900" class="footer__tel">8 800 890 8900</a>
+      </address>
+      <ul class="footer__lang-list">
+        <li class="footer__lang-item"><a href="#" class="footer__lang-link footer__lang-link--active">RU</a></li>
+        <li class="footer__lang-item"><a href="#" class="footer__lang-link">EN</a></li>
+        <li class="footer__lang-item"><a href="#" class="footer__lang-link">CH</a></li>
       </ul>
 </footer>
 </section>

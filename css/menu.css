@@ -3,14 +3,16 @@
     max-width: 1366px;
     margin: 0px auto;
     font-family: "TT Lakes", sans-serif;
+    color: #1B1C21;
 }
-.menu__main {
+.menu__section {
     width: 320px;
     box-shadow: 
     16px 0px 52px 0px #0E185033,
     -2px 0px 4px 0px #454F7E05;
     height: 1024px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
 }
 .menu__header {
     display: flex;
@@ -39,36 +41,94 @@ margin-right: auto;
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: 30px;
 }
 .menu__nav-item {
+    margin-bottom: 24px;
     margin-left: 24px;
-    margin-top: 15px;
 }
-.menu__nav-link {
+.menu__nav-button {
+    font-family: "TT Lakes", sans-serif;
+    background-color: white;
+    border: none;
     font-size: 16px;
+    line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
-    font-weight: 500;
-    text-decoration: none;
     line-height: 32px;
+    font-weight: 500;
 }
-.menu__nav-link--active {
+.menu__nav-button:hover {
+    opacity: 0.5;
+}
+.menu__nav-button--active {
     color: #7E7E82;
 }
-.menu__nav-link--active::before {
+.menu__nav-button--active::before {
     content: "";
     height: 32px;
-    content: "";
     position: absolute;
     border-left: 8px solid #41F6D7;
     border-radius: 4px;
     left: -4px;
 }
-.menu-footer {
-    background-color: #41F6D7;
-    border-top: solid 1px black;
-    margin-top: 260px;
-    margin-right: 24px;
+.menu__footer {
+    align-self: flex-start;
+    margin-top: auto;
 }
-.footer__nav-list {
+.menu__footer-nav-list {
+    padding: 0;
+    display: flex;
+    margin: 0 0 14px 8px;
+}
+.footer__addres {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 40px 24px;
+    font-style: normal;
+}
+.footer__email {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: #1B1C21;
+    margin-bottom: 12px;
+}
+.footer__email:hover {
+    opacity: 0.5;
+}
+.footer__tel {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: 600;
+    color: #1B1C21;
+    text-decoration: none;
+}
+.footer__tel:hover {
+    opacity: 0.5;
+}
+.footer__lang-list {
+    list-style: none;
+    margin: 0 0 32px 24px;
+    padding: 0;
+    display: flex;
+}
+.footer__lang-link {
+    display: block;
+    text-decoration: none;
+    color: #1B1C21;
+    margin-right: 7px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+}
+.footer__lang-link--active {
+    color: #7E7E82;
+}
+.footer__lang-link:hover {
+    opacity: 0.5;
 }
