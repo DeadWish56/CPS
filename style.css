@@ -37,6 +37,7 @@
     margin: 0;
     padding: 0;
 }
+
 .nav-item:not(:first-of-type) {
     margin-left: 16px;
 }
@@ -46,9 +47,14 @@
     margin: 0;
     border: none;
     background-color: transparent;
+    transition:
+        opacity 500ms,
+        transform 500ms;
 }
+
 .nav-btn:hover {
     opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .btn__icon--phone {
@@ -78,6 +84,15 @@
     background-color: #FF3E79;
     border-radius: 50%;
 }
+
+.logo {
+    transition: opacity 500ms;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
 .page__header {
     background-color: #fff;
 }
@@ -96,17 +111,13 @@
 
 .page__header-list {
     display: flex;
-    background-color: blue;
 }
 
 .page__header-item {
-    background-color: yellow;
     height: 40px;
 }
 
-.page__header-nav-btn {
-    background-color: red;
-}
+.page__header-nav-btn {}
 
 .page__header-list--right::before {
     content: "";
