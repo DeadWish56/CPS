@@ -1,13 +1,16 @@
 .nav-list {
     list-style: none;
 }
+
 .nav-list__btn {
     border: none;
     border-radius: 50%;
     margin: 0;
     padding: 0;
     margin-left: 16px;
+    transition: all 500ms;
 }
+
 .nav-list__btn::after {
     content: "";
     display: block;
@@ -18,21 +21,28 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-.nav-list__btn:hover {
-    opacity: 0.3;
+
+.nav-list__btn--hover:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
 }
+
 .nav-list__btn--repair::after {
     background-image: url("../img/icon-repair.svg");
 }
+
 .nav-list__btn--checkstatus:after {
     background-image: url("../img/icon-search.svg");
 }
+
 .nav-list__btn--phone::after {
     background-image: url("../img/icon-phohe.svg");
 }
+
 .nav-list__btn--message::after {
     background-image: url("../img/icon-message.svg");
 }
+
 .nav-list__btn--profille::after {
     background-image: url("../img/icon-profille.svg");
 }
@@ -43,12 +53,12 @@
         line-height: 24px;
         text-align: right;
         letter-spacing: -0.2px;
-        color: #1B1C21;
         font-weight: 500;
         margin-right: 8px;
         margin-left: 16px;
     }
-.nav-list__btn {
-    background-color: #f8f8f8;
-}
+
+    .nav-list__btn {
+        background-color: #f8f8f8;
+    }
 }

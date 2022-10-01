@@ -1,9 +1,12 @@
+.menu {
+    font-family: "TT Lakes", sans-serif;
+    color: #1B1C21;
+}
+
 .menu__body {
     min-width: 320px;
     max-width: 1366px;
     margin: 0px auto;
-    font-family: "TT Lakes", sans-serif;
-    color: #1B1C21;
 }
 .menu__section {
     width: 320px;
@@ -48,17 +51,16 @@ margin-right: auto;
     margin-left: 24px;
 }
 .menu__nav-button {
-    font-family: "TT Lakes", sans-serif;
     background-color: white;
     border: none;
-    font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: #1B1C21;
     line-height: 32px;
     font-weight: 500;
     opacity: 1;
     transition: 0.5s ease;
+    font-size: 16px;
+    font-family: "TT Lakes", sans-serif;
 }
 .menu__nav-button:hover {
     opacity: 0.5;
@@ -126,6 +128,8 @@ margin-right: auto;
     display: flex;
 }
 .footer__lang-link {
+    
+    font-family: "TT Lakes", sans-serif;
     display: block;
     text-decoration: none;
     color: #1B1C21;

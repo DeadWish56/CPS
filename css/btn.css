@@ -5,4 +5,10 @@
     border-radius: 50%;
     border: none;
     background-color: #FF3E79;
+    transition: all 1s;
+}
+
+.btn--hover:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
 }

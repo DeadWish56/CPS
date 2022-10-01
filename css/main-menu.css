@@ -1,12 +1,21 @@
-.main-menu__wrapper {
+.main-menu__inner {
     background-color: #F8F8F8;
 }
+
+.main-menu__top {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
 .main-menu__title {
     margin: 0 0 14px 16px;
     padding-top: 24px;
     font-size: 28px;
     line-height: 40px;
 }
+
 .main-menu__title::before {
     height: 40px;
     left: -4px;
@@ -16,42 +25,67 @@
 .main-menu__nav--display--none {
     display: none;
 }
+
 .main-menu__menu-list {
     margin: 0;
     padding: 0;
     overflow-x: scroll;
     margin-left: 16px;
     display: flex;
-    align-items: center;
 }
+
+.main-menu__menu-list::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
 @media (min-width: 768px) {
     .main-menu__title {
         margin-left: 24px;
     }
+
     .main-menu__menu-list {
         margin-left: 24px;
     }
 }
+
 @media (min-width: 1120px) {
     .main-menu__nav--display--none {
         display: block;
     }
+
+    .main-menu__menu-list::after {
+        display: none;
+    }
+
+    .main-menu__top {
+        display: flex;
+        padding-top: 22px;
+    }
+
     .main-menu__title {
         margin-left: 32px;
     }
+
     .main-menu__nav {
         display: flex;
         margin-left: auto;
         margin-right: 42px;
     }
-    .naim-menu__nav-btn {
+
+    .main-menu__nav-btn {
         display: flex;
         align-items: center;
     }
+
     .main-menu__menu-list {
         margin-left: 32px;
         flex-wrap: wrap;
         overflow-x: hidden;
     }
-    
+
 }

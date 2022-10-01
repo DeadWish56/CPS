@@ -1,12 +1,16 @@
+.page {
+    font-size: 14px;
+    font-family: "TT Lakes", sans-serif;
+    color: #1B1C21;
+}
 
 .page__body {
-font-size: 14px;
-font-family: "TT Lakes", sans-serif;
-margin: 0 auto;
-padding: 0;
-min-width: 320px;
-max-width: 767px;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 320px;
+    max-width: 767px;
 }
+
 .page--visually-hidden {
     position: absolute;
     width: 1px;
@@ -19,21 +23,17 @@ max-width: 767px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 @media (min-width: 768px) {
     .page__body {
         min-width: 768px;
         max-width: 1119px;
     }
 }
+
 @media (min-width: 1120px) {
     .page__body {
         min-width: 1120px;
         max-width: 1360px;
     }
 }
-
-
-
-
-
-
