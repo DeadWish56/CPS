@@ -9,6 +9,7 @@
     padding: 0;
     margin-left: 16px;
     transition: all 500ms;
+    cursor: pointer;
 }
 
 .nav-list__btn::after {
@@ -22,7 +23,7 @@
     background-position: 50% 50%;
 }
 
-.nav-list__btn--hover:hover {
+.nav-list__btn:hover {
     opacity: 0.5;
     transform: scale(1.1);
 }

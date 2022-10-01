@@ -12,7 +12,7 @@
     border: none;
     background-color: #F8F8F8;
     transition: 500ms;
-
+    cursor: pointer;
 }
 
 .menu-list__buttton--active {
@@ -22,7 +22,7 @@
     padding: 8px 22px;
 }
 
-.menu-list__buttton--hover:hover {
+.menu-list__buttton:hover {
     opacity: 0.5;
 }
 
