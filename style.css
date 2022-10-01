@@ -1,1 +1,132 @@
-@import "css/about.css";
+.page__body {
+    margin: 0;
+}
+
+.page__wrapper {
+    min-width: 320px;
+    max-width: 767px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.btn__icon--burger {
+    background: url("/img/icon-burger.svg") no-repeat 50% 50%;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0;
+    padding: 0;
+}
+.nav-item:not(:first-of-type) {
+    margin-left: 16px;
+}
+
+.nav-btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+.nav-btn:hover {
+    opacity: 0.5;
+}
+
+.btn__icon--phone {
+    background: url("/img/icon-phohe.svg") no-repeat 50% 50%;
+}
+
+.btn__icon--message {
+    background: url("/img/icon-message.svg") no-repeat 50% 50%;
+}
+
+.btn__icon--profille {
+    background: url("/img/icon-profille.svg") no-repeat 50% 50%;
+}
+
+.btn__icon--repair {
+    background: url("/img/icon-repair.svg") no-repeat 50% 50%;
+}
+
+.btn__icon--checkstatus {
+    background: url("/img/icon-checkstatus.svg") no-repeat 50% 50%;
+}
+
+.btn__icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+}
+.page__header {
+    background-color: #fff;
+}
+
+.page__header-inner {
+    height: 88px;
+}
+
+.page__header-logo {
+    margin-left: 16px;
+}
+
+.page__header-nav {
+    margin-left: auto;
+}
+
+.page__header-list {
+    display: flex;
+    background-color: blue;
+}
+
+.page__header-item {
+    background-color: yellow;
+    height: 40px;
+}
+
+.page__header-nav-btn {
+    background-color: red;
+}
+
+.page__header-list--right::before {
+    content: "";
+    border-left: 2px solid #EAEAEA;
+    border-radius: 1px;
+    height: 32px;
+    margin-right: 20px;
+    align-self: center;
+}
+
+@media (min-width: 300px) {
+
+    .page__header-inner {
+        display: flex;
+        margin: 0 16px 0 16px;
+        align-items: center;
+    }
+
+    .page__header--display--none {
+        display: none;
+    }
+
+}
