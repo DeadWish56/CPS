@@ -22,6 +22,11 @@
 .btn__icon--burger {
     background: url("img/icon-burger.svg") no-repeat 50% 50%;
 }
+.btn__icon--search {
+    background-image: url("img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 
 .nav-list {
     list-style: none;
@@ -40,7 +45,6 @@
 
 .nav-btn {
     padding: 0;
-    margin: 0;
     border: none;
     background-color: transparent;
     transition:
