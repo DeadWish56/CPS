@@ -212,7 +212,6 @@
     padding-left: 16px;
     margin-bottom: 24px;
     position: relative;
-    overflow: hidden;
 }
 
 .info__title {
@@ -398,12 +397,11 @@
     padding: 0;
     margin: 0;
     background-color: transparent;
-    transition: opacity 500ms, transform 500ms;
+    transition: opacity 500ms;
 }
 
 .btn-content:hover {
     opacity: 0.5;
-    transform: scale(1.1);
 }
 
 .btn-content__icon {
