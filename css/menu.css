@@ -21,7 +21,7 @@
         16px 0px 52px rgba(14, 24, 80, 0.2),
         2px 0px 4px rgba(69, 79, 126, 0.02);
     height: 1024px;
-    background-color: blanchedalmond;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
 }
@@ -45,7 +45,6 @@
 
 .modal-menu__list {
     margin-top: 12px;
-    background-color: red;
 }
 
 .menu-main__list {
