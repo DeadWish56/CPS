@@ -1,20 +1,22 @@
-.menu {
-    font-family: "TT Lakes", sans-serif;
-}
-
-.menu__body {
-    padding: 0;
+.body {
     margin: 0;
+    padding: 0;
 }
 
-.menu__main {
+.modal {
+    font-family: "TT Lakes", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.modal__wrapper {
     min-width: 320px;
     max-width: 1366px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.modal-menu {
+.modal__window {
     box-sizing: border-box;
     width: 320px;
     box-shadow:
@@ -45,19 +47,16 @@
 
 .modal-menu__list {
     margin-top: 12px;
-}
-
-.menu-main__list {
     position: relative;
 }
 
-.menu-main__item {
+.modal-menu__item {
     margin-left: 24px;
     margin-bottom: 24px;
     ;
 }
 
-.menu-main__btn {
+.modal-menu__item-btn {
     border: none;
     background-color: transparent;
     font-weight: 500;
@@ -67,11 +66,11 @@
     height: 32px;
 }
 
-.menu-main__btn--active {
+.modal-menu__item-btn--active {
     color: #7E7E82;
 }
 
-.menu-main__btn--active::before {
+.modal-menu__item-btn--active::before {
     content: "";
     height: 32px;
     position: absolute;
@@ -132,192 +131,4 @@
 }
 .modal-menu__lang-link--active {
     color: #7E7E82;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.menu {
-    font-family: "TT Lakes", sans-serif;
-    color: #1B1C21;
-}
-
-.menu__body {
-    min-width: 320px;
-    max-width: 1366px;
-    margin: 0px auto;
-}
-
-.menu__section {
-    width: 320px;
-    box-shadow:
-        16px 0px 52px 0px #0E185033,
-        -2px 0px 4px 0px #454F7E05;
-    height: 1024px;
-    display: flex;
-    flex-direction: column;
-}
-
-.menu__header {
-    display: flex;
-    align-items: center;
-    height: 88px;
-}
-
-.menu__header-logo {
-    margin-left: 16px;
-    margin-right: auto;
-}
-
-.menu__header-btn--close-icon {
-    margin-left: 24px;
-    background-image: url("../img/close-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-}
-
-.menu__header-btn--search-icon {
-    margin-right: 24px;
-    background-image: url("../img/search-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-}
-
-.menu__nav-list {
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-}
-
-.menu__nav-item {
-    margin-bottom: 24px;
-    margin-left: 24px;
-}
-
-.menu__nav-button {
-    background-color: white;
-    border: none;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    line-height: 32px;
-    font-weight: 500;
-    opacity: 1;
-    transition: 0.5s ease;
-    font-size: 16px;
-    font-family: "TT Lakes", sans-serif;
-    cursor: pointer;
-}
-
-.menu__nav-button:hover {
-    opacity: 0.5;
-    transition: 0.5s ease;
-}
-
-.menu__nav-button--active {
-    color: #7E7E82;
-}
-
-.menu__nav-button--active::before {
-    content: "";
-    height: 32px;
-    position: absolute;
-    border-left: 8px solid #41F6D7;
-    border-radius: 4px;
-    left: -4px;
-}
-
-.menu__footer {
-    align-self: flex-start;
-    margin-top: auto;
-}
-
-.menu__footer-nav-list {
-    padding: 0;
-    display: flex;
-    margin: 0 0 14px 8px;
-}
-
-.footer__addres {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 40px 24px;
-    font-style: normal;
-}
-
-.footer__email {
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    font-weight: 500;
-    color: #1B1C21;
-    margin-bottom: 12px;
-    opacity: 1;
-    transition: 0.5s ease;
-}
-
-.footer__email:hover {
-    opacity: 0.5;
-    transition: 0.5s ease;
-}
-
-.footer__tel {
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.6px;
-    font-weight: 600;
-    color: #1B1C21;
-    text-decoration: none;
-    opacity: 1;
-    transition: 0.5s ease;
-}
-
-.footer__tel:hover {
-    opacity: 0.5;
-    transition: 0.5s ease;
-}
-
-.footer__lang-list {
-    list-style: none;
-    margin: 0 0 32px 24px;
-    padding: 0;
-    display: flex;
-}
-
-.footer__lang-link {
-
-    font-family: "TT Lakes", sans-serif;
-    display: block;
-    text-decoration: none;
-    color: #1B1C21;
-    margin-right: 7px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    font-weight: 500;
-    opacity: 1;
-    transition: 0.5s ease;
-}
-
-.footer__lang-link--active {
-    color: #7E7E82;
-}
-
-.footer__lang-link:hover {
-    opacity: 0.5;
-    transition: 0.5s ease;
 }

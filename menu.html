@@ -1,89 +1,88 @@
 <!DOCTYPE html>
-<html class="menu" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="fonts/TTlakes/stylesheet.css">
   <title>Document</title>
 </head>
 
-<body class="menu__body">
-  <main class="menu__main">
-    <section class="modal modal-menu">
-      <header class="header modal-menu__header">
-        <button class="nav-btn modal-menu__btn modal-menu__btn--left" title="Открыть меню"><span
-            class="btn__icon btn__icon--burger"></span><span class="visually-hidden">Открыть
-            меню</span></button>
-        <div class="logo modal-menu__logo">
-          <a href="" class="logo__link">
-            <img src="img/logo.svg" alt="сервисный центр CPS">
-          </a>
-        </div>
-        <button class="nav-btn modal-menu__btn modal-menu__btn--right" title="Поиск"><span
-            class="btn__icon btn__icon--search"></span><span class="visually-hidden">Открыть
-            поиск</span></button>
-      </header>
-      <div class="menu-main modal-menu__list">
-        <ul class="list menu-main__list">
-          <li class="list-item menu-main__item">
-            <button class="list-btn menu-main__btn menu-main__btn--active">Ремонт техники</button>
+<body class="body">
+  <section class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__window modal-menu">
+        <header class="header modal-menu__header">
+          <button class="nav-btn modal-menu__btn modal-menu__btn--left" title="Открыть меню"><span
+              class="btn__icon btn__icon--burger"></span><span class="visually-hidden">Открыть
+              меню</span></button>
+          <div class="logo modal-menu__logo">
+            <a href="" class="logo__link">
+              <img src="img/logo.svg" alt="сервисный центр CPS">
+            </a>
+          </div>
+          <button class="nav-btn modal-menu__btn modal-menu__btn--right" title="Поиск"><span
+              class="btn__icon btn__icon--search"></span><span class="visually-hidden">Открыть
+              поиск</span></button>
+        </header>
+        <ul class="list modal-menu__list">
+          <li class="list-item modal-menu__item">
+            <button class="list-btn modal-menu__item-btn modal-menu__item-btn--active">Ремонт техники</button>
           </li>
-          <li class="list-item menu-main__item">
-            <button class="list-btn menu-main__btn">Услуги и сервисы</button>
+          <li class="list-item modal-menu__item">
+            <button class="list-btn modal-menu__item-btn">Услуги и сервисы</button>
           </li>
-          <li class="list-item menu-main__item">
-            <button class="list-btn menu-main__btn">Корпоративным клиентам</button>
+          <li class="list-item modal-menu__item">
+            <button class="list-btn modal-menu__item-btn">Корпоративным клиентам</button>
           </li>
-          <li class="list-item menu-main__item">
-            <button class="list-btn menu-main__btn">Продавцам техники</button>
+          <li class="list-item modal-menu__item">
+            <button class="list-btn modal-menu__item-btn">Продавцам техники</button>
           </li>
-          <li class="list-item menu-main__item">
-            <button class="list-btn menu-main__btn">Партнерам</button>
+          <li class="list-item modal-menu__item">
+            <button class="list-btn modal-menu__item-btn">Партнерам</button>
           </li>
-          <li class="list-item menu-main__item">
-            <button class="list-btn menu-main__btn">Производителям</button>
+          <li class="list-item modal-menu__item">
+            <button class="list-btn modal-menu__item-btn">Производителям</button>
           </li>
-          <li class="list-item menu-main__item">
-            <button class="list-btn menu-main__btn">Наши сервисные центры</button>
+          <li class="list-item modal-menu__item">
+            <button class="list-btn modal-menu__item-btn">Наши сервисные центры</button>
           </li>
-          <li class="list-item menu-main__item">
-            <button class="list-btn menu-main__btn">Контакты</button>
+          <li class="list-item modal-menu__item">
+            <button class="list-btn modal-menu__item-btn">Контакты</button>
           </li>
         </ul>
+        <footer class="modal-menu__footer">
+          <ul class="nav-list modal-menu__footer-list">
+            <li class="nav-item modal-menu__footer-item">
+              <button class="nav-btn modal-menu__footer-btn"><span class="btn__icon btn__icon--phone"></span><span
+                  class="visually-hidden">Заказать
+                  звонок</span></button>
+            </li>
+            <li class="nav-item modal-menu__footer-item">
+              <button class="nav-btn modal-menu__footer-btn"><span class="btn__icon btn__icon--message"></span><span
+                  class="visually-hidden">Чат с
+                  поддержкой</span></button>
+            </li>
+            <li class="nav-item  modal-menu__footer-item">
+              <button class="nav-btn modal-menu__footer-btn"><span class="btn__icon btn__icon--profille"></span><span
+                  class="visually-hidden">Профиль</span></button>
+            </li>
+          </ul>
+          <address class="modal-menu__address">
+            <a class="modal-menu__email address-link" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="modal-menu__tel address-link" href="tel:88008908900">8 800 890 8900</a>
+          </address>
+          <ul class="modal-menu__lang-list">
+            <li class="modal-menu__lang-item"><a href="#"
+                class="modal-menu__lang-link modal-menu__lang-link--active address-link">RU</a></li>
+            <li class="modal-menu__lang-item"><a href="#" class="modal-menu__lang-link address-link">EN</a></li>
+            <li class="modal-menu__lang-item"><a href="#" class="modal-menu__lang-link address-link">CH</a></li>
+          </ul>
+        </footer>
       </div>
-      <footer class="modal-menu__footer">
-        <ul class="nav-list modal-menu__footer-list">
-          <li class="nav-item modal-menu__footer-item">
-            <button class="nav-btn modal-menu__footer-btn"><span class="btn__icon btn__icon--phone"></span><span
-                class="visually-hidden">Заказать
-                звонок</span></button>
-          </li>
-          <li class="nav-item modal-menu__footer-item">
-            <button class="nav-btn modal-menu__footer-btn"><span class="btn__icon btn__icon--message"></span><span
-                class="visually-hidden">Чат с
-                поддержкой</span></button>
-          </li>
-          <li class="nav-item  modal-menu__footer-item">
-            <button class="nav-btn modal-menu__footer-btn"><span class="btn__icon btn__icon--profille"></span><span
-                class="visually-hidden">Профиль</span></button>
-          </li>
-        </ul>
-        <address class="modal-menu__address">
-          <a class="modal-menu__email address-link" href="mailto:mail@cps.com">mail@cps.com</a>
-          <a class="modal-menu__tel address-link" href="tel:88008908900">8 800 890 8900</a>
-        </address>
-        <ul class="modal-menu__lang-list">
-          <li class="modal-menu__lang-item"><a href="#"
-              class="modal-menu__lang-link modal-menu__lang-link--active address-link">RU</a></li>
-          <li class="modal-menu__lang-item"><a href="#" class="modal-menu__lang-link address-link">EN</a></li>
-          <li class="modal-menu__lang-item"><a href="#" class="modal-menu__lang-link address-link">CH</a></li>
-        </ul>
-      </footer>
-    </section>
-  </main>
-</body>
+    </div>
+  </section>
 
 </html>
