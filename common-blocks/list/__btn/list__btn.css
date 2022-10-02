@@ -1,0 +1,11 @@
+.list__btn {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    transition: opacity 500ms;
+}
+
+.list__btn:hover {
+    opacity: 0.5;
+}

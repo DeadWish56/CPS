@@ -1,0 +1,11 @@
+.about__content-text--display--block {
+    display: none;
+}
+
+@media (min-width: 1120px) {
+
+    .about__content-text--display--block {
+        display: inline;
+    }
+
+}

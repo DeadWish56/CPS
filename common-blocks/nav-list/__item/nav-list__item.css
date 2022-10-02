@@ -1,0 +1,17 @@
+.nav-list__item {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list__item:not(:first-of-type) {
+    margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .nav-list__item {
+        margin: 0;
+        padding: 0;
+
+    }
+}

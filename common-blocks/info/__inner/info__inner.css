@@ -1,0 +1,10 @@
+.info__inner {
+    padding-top: 24px;
+    overflow: hidden;
+}
+@media (min-width: 1120px) {
+
+    .info__inner {
+        padding-top: 32px;
+    }
+}

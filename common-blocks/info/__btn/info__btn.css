@@ -1,0 +1,16 @@
+.info__btn {
+    white-space: nowrap;
+    border: none;
+    background-color: transparent;
+    padding-left: 16px;
+    color: #7E7E82;
+}
+
+@media (min-width: 1120px) {
+    
+    .info__btn {
+        white-space: wrap;
+        padding: 9px 22px;
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,11 @@
+.about__content-inner {
+    margin: 0 16px 16px 16px;
+}
+
+@media (min-width: 768px) {
+
+    .about__content-inner {
+        flex-basis: 100%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,11 @@
+@media (min-width: 1120px) {
+    .info__nav-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .info__nav-item:not(:last-of-type) {
+        margin: 0 16px 0 0;
+        padding: 0;
+    }
+}

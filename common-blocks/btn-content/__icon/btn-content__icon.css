@@ -1,0 +1,8 @@
+.btn-content__icon {
+    display: inline-block;
+    background: url("/common-blocks/btn-content/__icon/icon-expand.svg") no-repeat 50% 50%;
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    margin-right: 8px;
+}

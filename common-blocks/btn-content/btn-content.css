@@ -1,0 +1,17 @@
+.btn-content {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    transition: opacity 500ms;
+}
+
+.btn-content:hover {
+    opacity: 0.5;
+}

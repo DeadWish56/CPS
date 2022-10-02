@@ -1,0 +1,65 @@
+@import url(common-blocks/header/header.css);
+@import url(common-blocks/visually-hidden/visually-hidden.css);
+@import url(common-blocks/nav-btn/nav-btn.css);
+@import url(common-blocks/btn-icon/--burger/btn-icon--burger.css);
+@import url(common-blocks/btn-icon/--checkstatus/btn-icon--checkstatus.css);
+@import url(common-blocks/btn-icon/--message/btn-icon--message.css);
+@import url(common-blocks/btn-icon/--phone/btn-icon--phone.css);
+@import url(common-blocks/btn-icon/--profille/btn-icon--profille.css);
+@import url(common-blocks/btn-icon/--repair/btn-icon--repair.css);
+@import url(common-blocks/btn-icon/btn-icon.css);
+@import url(common-blocks/logo/logo.css);
+@import url(common-blocks/logo/__link/logo__link.css);
+@import url(common-blocks/nav-list/nav-list.css);
+@import url(common-blocks/nav-list/__item/nav-list__item.css);
+@import url(common-blocks/section/section.css);
+@import url(common-blocks/list/list.css);
+@import url(common-blocks/list/__btn/list__btn.css);
+@import url(common-blocks);
+@import url(common-blocks/btn-content/btn-content.css);
+@import url(common-blocks/btn-content/__icon/btn-content__icon.css);
+@import url(common-blocks/title/title.css);
+
+
+
+@import url(common-blocks/page/page.css);
+@import url(common-blocks/page/__body/page__body.css);
+@import url(common-blocks/page/__header/page__header.css);
+@import url(common-blocks/page/__header/--display/page__header--display--none.css);
+@import url(common-blocks/page/__header-inner/page__header-inner.css);
+@import url(common-blocks/page/__header-btn/page__header-btn.css);
+@import url(common-blocks/page/__header-logo/page__header-logo.css);
+@import url(common-blocks/page/__header-link/page__header-link.css);
+@import url(common-blocks/page/__header-nav/page__header-nav.css);
+@import url(common-blocks/page/__header-list/page__header-list.css);
+@import url(common-blocks/page/__header-list/--left/page__header-list--left.css);
+@import url(common-blocks/page/__header-list/--display/page__header-list--display--none.css);
+@import url(common-blocks/page/__header-item/page__header-item.css);
+@import url(common-blocks/page/__header-nav-btn/page__header-nav-btn.css);
+@import url(common-blocks/page/__header-list/--right/page__header-list--right.css);
+@import url(common-blocks/page/__main/page__main.css);
+
+@import url(common-blocks/info/info.css);
+@import url(common-blocks/info/__inner/info__inner.css);
+@import url(common-blocks/info/__top/info__top.css);
+@import url(common-blocks/info/__title/info__title.css);
+@import url(common-blocks/info/__nav-list/info__nav-list.css);
+@import url(common-blocks/info/__nav-list/--display/info__nav-list--display--none.css);
+@import url(common-blocks/info/__nav-item/info__nav-item.css);
+@import url(common-blocks/info/__nav-btn/info__nav-btn.css);
+@import url(common-blocks/info/__nav-btn-text/info__nav-btn-text.css);
+@import url(common-blocks/info/__list/info__list.css);
+@import url(common-blocks/info/__item/info__item.css);
+@import url(common-blocks/info/__btn/info__btn.css);
+@import url(common-blocks/info/__btn/--active/info__btn--active.css);
+
+@import url(common-blocks/about/about.css);
+@import url(common-blocks/about/__content/about__content.css);
+@import url(common-blocks/about/__content-inner/about__content-inner.css);
+@import url(common-blocks/about/__content-text/about__content-text.css);
+@import url(common-blocks/about/__content-text/--display/about__content-text--display--none.css);
+@import url(common-blocks/about/__content-text/--display/about__content-text--display--block.css);
+@import url(common-blocks/about/__content__btn/about__content-btn.css);
+@import url(common-blocks/about/__img/about__img.css);
+@import url(common-blocks/about/__content-img/about__content-img.css);
+

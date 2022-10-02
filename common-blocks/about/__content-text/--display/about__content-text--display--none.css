@@ -1,0 +1,10 @@
+.about__content-text--display--none {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .about__content-text--display--none {
+        display: block;
+    }
+}

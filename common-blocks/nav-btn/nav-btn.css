@@ -1,0 +1,13 @@
+.nav-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transition:
+        opacity 500ms,
+        transform 500ms;
+}
+
+.nav-btn:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
