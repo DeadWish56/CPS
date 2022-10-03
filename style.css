@@ -34,12 +34,12 @@
     padding: 0;
 }
 
-.nav-item {
+.nav-list__item {
     margin: 0;
     padding: 0;
 }
 
-.nav-item:not(:first-of-type) {
+.nav-list__item:not(:first-of-type) {
     margin-left: 16px;
 }
 
@@ -194,7 +194,6 @@
 }
 
 .section {
-    margin-top: 1px;
     box-shadow: 0px -2px 0px -1px #D9FFF5;
 }
 
@@ -240,7 +239,7 @@
     list-style: none;
 }
 
-.list-btn {
+.list__btn {
     font-family: 'TT Lakes';
     font-size: 16px;
     line-height: 24px;
@@ -248,7 +247,7 @@
     transition: opacity 500ms;
 }
 
-.list-btn:hover {
+.list__btn:hover {
     opacity: 0.5;
 }
 
@@ -346,7 +345,7 @@
     }
 
     .info__nav-item:not(:last-of-type) {
-        margin: 0 32px 0 0;
+        margin: 0 16px 0 0;
         padding: 0;
     }
 
@@ -461,7 +460,7 @@
         border-radius: 6px;
     }
 
-    .nav-item {
+    .nav-list__item {
         margin: 0;
         padding: 0;
 
