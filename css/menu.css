@@ -1,27 +1,3 @@
-@import url(common-blocks/header/header.css);
-@import url(common-blocks/visually-hidden/visually-hidden.css);
-@import url(common-blocks/nav-btn/nav-btn.css);
-@import url(common-blocks/btn-icon/--burger/btn-icon--burger.css);
-@import url(common-blocks/btn-icon/--checkstatus/btn-icon--checkstatus.css);
-@import url(common-blocks/btn-icon/--message/btn-icon--message.css);
-@import url(common-blocks/btn-icon/--phone/btn-icon--phone.css);
-@import url(common-blocks/btn-icon/--profille/btn-icon--profille.css);
-@import url(common-blocks/btn-icon/--repair/btn-icon--repair.css);
-@import url(common-blocks/btn-icon/--search/btn-icon--search.css);
-@import url(common-blocks/btn-icon/btn-icon.css);
-@import url(common-blocks/logo/logo.css);
-@import url(common-blocks/logo/__link/logo__link.css);
-@import url(common-blocks/nav-list/nav-list.css);
-@import url(common-blocks/nav-list/__item/nav-list__item.css);
-@import url(common-blocks/section/section.css);
-@import url(common-blocks/list/list.css);
-@import url(common-blocks/list/__btn/list__btn.css);
-@import url(common-blocks);
-@import url(common-blocks/btn-content/btn-content.css);
-@import url(common-blocks/btn-content/__icon/btn-content__icon.css);
-@import url(common-blocks/title/title.css);
-
-
 .body {
     margin: 0;
     padding: 0;
