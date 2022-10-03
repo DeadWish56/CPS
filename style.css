@@ -209,13 +209,13 @@
 
 .info__inner {
     padding-top: 24px;
+    overflow: hidden;
 }
 
 .info__top {
     padding-left: 16px;
     margin-bottom: 24px;
     position: relative;
-    overflow: hidden;
 }
 
 .info__title {
