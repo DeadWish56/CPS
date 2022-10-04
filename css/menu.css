@@ -28,15 +28,6 @@
     flex-direction: column;
 }
 
-
-.modal-menu__header {
-    display: flex;
-    height: 88px;
-    align-items: center;
-    margin: 0 24px;
-
-}
-
 .modal-menu__logo {
     margin-left: 16px;
 }
@@ -46,6 +37,7 @@
 }
 
 .modal-menu__list {
+    flex-direction: column;
     margin-top: 12px;
     position: relative;
 }
@@ -85,15 +77,12 @@
 
 }
 
-.modal-menu__footer-list {
-    display: flex;
-}
-
 .modal-menu__address {
     font-style: normal;
     display: flex;
     flex-direction: column;
     margin-top: 16px;
+    align-items: flex-start;
 }
 
 .address-link {

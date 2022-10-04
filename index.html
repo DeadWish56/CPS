@@ -13,88 +13,88 @@
 </head>
 
 <body class="page__body">
-  <header class="header page__header page__header--display--none">
-    <div class="inner page__header-inner">
-      <button class="nav-btn page__header-btn" title="Открыть меню"><span
-          class="btn__icon btn__icon--burger"></span><span class="visually-hidden">Открыть
-          меню</span></button>
-      <div class="logo page__header-logo">
-        <a href="" class="logo__link page__header-link">
-          <img src="img/logo.svg" alt="сервисный центр CPS">
-        </a>
-      </div>
-      <nav class="page__header-nav">
-        <ul class="nav-list page__header-list page__header-list--left page__header-list--display--none">
-          <li class="nav-list__item page__header-item">
-            <button class="nav-btn page__header-nav-btn"><span class="btn__icon btn__icon--phone"></span><span
-                class="visually-hidden">Заказать
-                звонок</span></button>
-          </li>
-          <li class="nav-list__item page__header-item">
-            <button class="nav-btn page__header-nav-btn"><span class="btn__icon btn__icon--message"></span><span
-                class="visually-hidden">Чат с
-                поддержкой</span></button>
-          </li>
-          <li class="nav-list__item page__header-item">
-            <button class="nav-btn page__header-nav-btn"><span class="btn__icon btn__icon--profille"></span><span
-                class="visually-hidden">Профиль</span></button>
-          </li>
-        </ul>
-        <ul class="nav-list page__header-list page__header-list--right">
-          <li class="nav-list__item page__header-item">
-            <button class="nav-btn page__header-nav-btn"><span class="btn__icon btn__icon--repair"></span><span
-                class="visually-hidden">Оставить
-                заявку</span></button>
-          </li>
-          <li class="nav-list__item page__header-item">
-            <button class="nav-btn page__header-nav-btn"><span class="btn__icon btn__icon--checkstatus"></span><span
-                class="visually-hidden">Статус
-                ремонта</span></button>
-          </li>
-        </ul>
-      </nav>
+  <header class="header header--display--none">
+    <div class="header__inner">
+      <button class="btn button" title="Открыть меню">
+        <span class="btn__icon btn__icon--burger"></span>
+        <span class="visually-hidden">Открыть
+          меню</span>
+      </button>
+      <a href="" class="logo header__logo header__logo--pseudo">
+        <img src="img/logo.svg" alt="сервисный центр CPS">
+      </a>
+      <ul class="help-list list header__help-list header__help-list--display--none">
+        <li class="help-list__item ">
+          <button class="btn button">
+            <span class="btn__icon btn__icon--phone"></span>
+            <span class="visually-hidden">Заказать звонок</span>
+          </button>
+        </li>
+        <li class="help-list__item">
+          <button class="btn button">
+            <span class="btn__icon btn__icon--message">
+            </span><span class="visually-hidden">Чат с поддержкой</span>
+          </button>
+        </li>
+        <li class="help-list__item">
+          <button class="btn button">
+            <span class="btn__icon btn__icon--profille"></span>
+            <span class="visually-hidden">Профиль</span>
+          </button>
+        </li>
+      </ul>
+      <ul class="help-list list header__help-list header__help-list--pseudo">
+        <li class="help-list__item">
+          <button class="btn button">
+            <span class="btn__icon btn__icon--repair"></span>
+            <span class="visually-hidden">Оставить заявку</span>
+          </button>
+        </li>
+        <li class="help-list__item">
+          <button class="btn button"><span class="btn__icon btn__icon--checkstatus"></span><span
+              class="visually-hidden">Статус
+              ремонта</span>
+          </button>
+        </li>
+      </ul>
     </div>
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">Сервисный центр CPS</h1>
-    <section class="section info">
-      <div class="info__inner">
-        <div class="info__top">
-          <h2 class="title info__title">Услуги и сервисы</h2>
-          <ul class="nav-list info__nav-list info__nav-list--display--none">
-            <li class="nav-list__item info__nav-item">
-              <button class="nav-btn info__nav-btn"><span
-                  class="info__nav-btn-text">Оставить
-                  заявку</span><span class="btn__icon btn__icon--repair"></span></button>
-            </li>
-            <li class="nav-list__item info__nav-item">
-              <button class="nav-btn info__nav-btn"></span><span
-                  class="info__nav-btn-text">Статус
-                  ремонта</span><span class="btn__icon btn__icon--checkstatus"></button>
-            </li>
-          </ul>
-        </div>
-        <ul class="list info__list">
-          <li class="list-item info__item">
-            <button class="list__btn info__btn info__btn--active">Ремонтируемые бренды</button>
+    <section class="main-menu section">
+      <div class="top-inner main-menu__inner">
+        <h2 class="title title-text title-text--pseudo info__title">Услуги и сервисы</h2>
+        <ul class="help-list list info__nav-list info__nav-list--display--none">
+          <li class="help-list__item info__nav-item">
+            <button class="btn info__nav-btn"><span class="info__nav-btn-text">Оставить
+                заявку</span><span class="btn__icon btn__icon--repair"></span></button>
           </li>
-          <li class="list-item info__item">
-            <button class="list__btn info__btn">Дополнительные услуги</button>
-          </li>
-          <li class="list-item info__item">
-            <button class="list__btn info__btn">Цены на услуги</button>
-          </li>
-          <li class="list-item info__item">
-            <button class="list__btn info__btn">Адреса сервисных центров</button>
-          </li>
-          <li class="list-item info__item">
-            <button class="list__btn info__btn">Специальные цены</button>
-          </li>
-          <li class="list-item info__item">
-            <button class="list__btn info__btn">Отзывы</button>
+          <li class="help-list__item info__nav-item">
+            <button class="btn info__nav-btn"></span><span class="info__nav-btn-text">Статус
+                ремонта</span><span class="btn__icon btn__icon--checkstatus"></button>
           </li>
         </ul>
       </div>
+      <ul class="list info__list">
+        <li class="list-item info__item">
+          <button class="list__btn info__btn info__btn--active">Ремонтируемые бренды</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Дополнительные услуги</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Цены на услуги</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Адреса сервисных центров</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Специальные цены</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Отзывы</button>
+        </li>
+      </ul>
     </section>
     <section class="about">
       <h2 class="visually-hidden">О нас</h2>
@@ -106,10 +106,12 @@
           </p>
           <p class="about__content-text about__content-text--display--none">
             Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-            <span class="about__content-text about__content-text--display--block">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким</span>
+            <span class="about__content-text about__content-text--display--block">, что подтверждает большое количество
+              постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
+              нас родным и близким</span>
           </p>
-          <button class="btn-content about__content-btn">
-            <span class="btn-content__icon"></span>Читать далее</button>
+          <button class="btn-content">
+            <span class="btn-content__icon"></span><span>Читать далее</span></button>
         </div>
         <picture class="about__img">
           <source srcset="img/cps768.jpg" media="(min-width: 45060px)">
@@ -119,6 +121,35 @@
         </picture>
       </div>
     </section>
+
+    <section class="section">
+      <div class="top-inner main-menu__inner">
+        <h2 class="title title-text">Услуги и сервисы</h2>
+        
+      </div>
+      <ul class="list info__list">
+        <li class="list-item info__item">
+          <button class="list__btn info__btn info__btn--active">Ремонтируемые бренды</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Дополнительные услуги</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Цены на услуги</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Адреса сервисных центров</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Специальные цены</button>
+        </li>
+        <li class="list-item info__item">
+          <button class="list__btn info__btn">Отзывы</button>
+        </li>
+      </ul>
+    </section>
+
+
   </main>
   </div>
 </body>
