@@ -5,23 +5,61 @@
     color: #1B1C21;
     letter-spacing: -0.2px;
 }
-.title-text {
-    padding: 0 0 0 16px;
-    margin: 0 0 0 0;
+
+.title {
+    text-transform: uppercase;
+    color: #7E7E82;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
 }
 
-.title-text--pseudo::before {
+.inner--bg {
+    background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+}
+
+.inner__title {
+    padding: 16px;
+    margin: 0;
+
+}
+
+.title-modal {
+    padding: 0 0 0 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    height: 32px;
+    color: #1b1c21;
+    text-transform: none;
+    letter-spacing: -0.6px;
+
+}
+
+
+.inner__title--pseudo::before {
     content: "";
     height: 100%;
     border-left: 8px solid #41F6D7;
     border-radius: 6px;
-    position: absolute;
     left: -4px;
-}
-
-.title-text--pseudo {
+    position: absolute;
 
 }
+
+.menu__inner {
+    padding: 0 0 0 16px;
+    position: relative;
+    display: flex;
+}
+
+.menu__title {
+    font-size: 28px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -163,6 +201,7 @@
         min-width: 768px;
         max-width: 1119px;
     }
+
     .header__help-list {
         margin-left: 20px;
     }
@@ -189,6 +228,10 @@
         padding: 0 24px 0 24px;
     }
 
+    .menu__inner {
+        padding: 0 0 0 24px;
+    }
+
 }
 
 @media (min-width: 1120px) {
@@ -210,15 +253,10 @@
     box-shadow: 0px -2px 0px -1px #D9FFF5;
 }
 
-.main-menu {
-    background-color: #F8F8F8;
-    padding: 0;
-    margin: 0;
-}
-
-.info__nav-list--display--none {
+.menu__help-list--display--none {
     display: none;
 }
+
 .info__title {
     font-size: 28px;
     line-height: 40px;
@@ -282,13 +320,18 @@
 
 @media (min-width: 1120px) {
 
+    .menu__inner {
+        padding: 0 32px 0 32px;
+        position: relative;
+        display: flex;
+    }
 
-    .info__nav-list--display--none {
+    .menu__help-list--display--none {
         display: flex;
 
     }
 
-    .info__nav-list {
+    .menu__help-list {
         margin-left: auto;
         padding: 0;
     }
@@ -308,17 +351,12 @@
         background-color: transparent;
     }
 
-    .info__nav-item {
-        margin: 0;
-        padding: 0;
-    }
-
     .info__nav-btn-text {
         margin: 0 8px 0 0;
         padding: 0;
     }
 
-    .info__nav-item:not(:last-of-type) {
+    .menu__help-item:not(:last-of-type) {
         margin: 0 16px 0 0;
         padding: 0;
     }
