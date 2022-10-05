@@ -1,0 +1,11 @@
+.section {
+    box-shadow: 0px -2px 0px -1px #D9FFF5;
+}
+
+.section__title {
+    padding: 16px;
+}
+
+.section__inner--bgc {
+    background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+}

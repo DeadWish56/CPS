@@ -1,0 +1,132 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    font-family: "TT Lakes", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.modal__wrapper {
+    min-width: 320px;
+    max-width: 1366px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.modal__window {
+    box-sizing: border-box;
+    width: 320px;
+    box-shadow:
+        16px 0px 52px rgba(14, 24, 80, 0.2),
+        2px 0px 4px rgba(69, 79, 126, 0.02);
+    height: 1024px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-menu__logo {
+    margin-left: 16px;
+}
+
+.modal-menu__btn--right {
+    margin-left: auto;
+}
+
+.modal-menu__list {
+    flex-direction: column;
+    margin-top: 12px;
+    position: relative;
+}
+
+.modal-menu__nav-item {
+    margin-left: 24px;
+    margin-bottom: 24px;
+    ;
+}
+
+.modal-menu__nav-link {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-weight: 500;
+}
+
+.modal-menu__nav-link--active {
+    color: #7E7E82;
+}
+
+.modal-menu__nav-link--active:hover {
+    opacity: 1;
+}
+
+.modal-menu__nav-link--active::before {
+    content: "";
+    height: 32px;
+    position: absolute;
+    border-left: 8px solid #41F6D7;
+    border-radius: 4px;
+    left: -4px;
+}
+
+.modal-menu__footer {
+    margin: 0 24px 32px 24px;
+    margin-top: auto;
+
+}
+
+.modal-menu__address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    align-items: flex-start;
+}
+
+.contacts {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-decoration: none;
+    transform: opacity 500ms;
+    font-weight: 500;
+}
+
+.contacts:hover {
+    opacity: 0.5;
+}
+
+.modal-menu__tel {
+    margin-top: 12px;
+
+}
+.tel {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+}
+
+.modal-menu__lang-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-top: 36px;
+}
+
+.modal-menu__lang-item {
+    margin-right: 7px;
+}
+
+.modal-menu__lang-link--active {
+    color: #7E7E82;
+}
+
+.modal-menu__lang-link--active:hover {
+    opacity: 1;
+}

@@ -1,0 +1,9 @@
+.help-list__item {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+
+.help-list__item:not(:first-of-type) {
+    margin-left: 16px;
+}
