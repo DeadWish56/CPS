@@ -58,6 +58,7 @@
 .modal-menu__nav-link--active {
     color: #7E7E82;
 }
+
 .modal-menu__nav-link--active:hover {
     opacity: 1;
 }
@@ -85,7 +86,7 @@
     align-items: flex-start;
 }
 
-.address-link {
+.contacts {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -95,12 +96,15 @@
     font-weight: 500;
 }
 
-.address-link:hover {
+.contacts:hover {
     opacity: 0.5;
 }
 
 .modal-menu__tel {
     margin-top: 12px;
+
+}
+.tel {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.6px;
@@ -118,6 +122,11 @@
 .modal-menu__lang-item {
     margin-right: 7px;
 }
+
 .modal-menu__lang-link--active {
     color: #7E7E82;
+}
+
+.modal-menu__lang-link--active:hover {
+    opacity: 1;
 }

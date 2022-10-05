@@ -69,13 +69,11 @@
 }
 
 .btn__icon--burger {
-    background: url("img/icon-burger.svg") no-repeat 50% 50%;
+    background: #FF3E79 url("../img/icon-burger.svg") no-repeat 50%;
 }
 
 .btn__icon--search {
-    background-image: url("img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background: #FF3E79 url("../img/icon-search.svg") no-repeat 50%;
 }
 
 .list {
@@ -113,35 +111,13 @@
 }
 
 .button {
-    background-color: transparent;
     border-radius: 50%;
-    padding: 0;
     border: none;
 }
 
 .btn:hover {
     opacity: 0.5;
     transform: scale(1.1);
-}
-
-.btn__icon--phone {
-    background: url("img/icon-phohe.svg") no-repeat 50% 50%;
-}
-
-.btn__icon--message {
-    background: url("img/icon-message.svg") no-repeat 50% 50%;
-}
-
-.btn__icon--profille {
-    background: url("img/icon-profille.svg") no-repeat 50% 50%;
-}
-
-.btn__icon--repair {
-    background: url("img/icon-repair.svg") no-repeat 50% 50%;
-}
-
-.btn__icon--checkstatus {
-    background: url("img/icon-checkstatus.svg") no-repeat 50% 50%;
 }
 
 .btn__icon {
@@ -151,6 +127,28 @@
     background-color: #FF3E79;
     border-radius: 50%;
 }
+
+.btn__icon--phone {
+    background: #FF3E79 url("../img/icon-phohe.svg") no-repeat 50%;
+}
+
+.btn__icon--message {
+    background: #FF3E79 url("../img/icon-message.svg") no-repeat 50%;
+}
+
+.btn__icon--profille {
+    background: #FF3E79 url("../img/icon-profille.svg") no-repeat 50%;
+}
+
+.btn__icon--repair {
+    background: #FF3E79 url("../img/icon-repair.svg") no-repeat 50%;
+}
+
+.btn__icon--checkstatus {
+    background: #FF3E79 url("../img/icon-checkstatus.svg") no-repeat 50%;
+}
+
+
 
 .logo {
     transition: opacity 500ms;
@@ -427,7 +425,7 @@
     vertical-align: top;
 }
 .btn__expand--arrows {
-    background: url("img/expand-icon.svg") no-repeat 50% 50%;
+    background: url("../img/expand-icon.svg") no-repeat 50% 50%;
 }
 
 
