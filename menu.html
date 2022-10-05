@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  
   <link rel="stylesheet" href="css/menu.css">
-  <link rel="stylesheet" href="fonts/TTlakes/stylesheet.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fonts/TT lakes.css">
   <title>Document</title>
 </head>
 
@@ -15,61 +16,67 @@
     <div class="modal__wrapper">
       <div class="modal__window modal-menu">
         <header class="header">
-          <div class="wrapper">
-            <div class="wrapper__inner header__inner">
-              <button class="btn button modal-menu__btn" title="Открыть меню"><span
-                  class="btn__icon btn__icon--burger"></span><span class="visually-hidden">Открыть
-                  меню</span></button>
+            <div class="header__inner">
+              <button class="btn button modal-menu__btn" title="Открыть меню">
+                <span class="btn__icon btn__icon--burger"></span>
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
               <a href="" class="logo modal-menu__logo">
                 <img src="img/logo.svg" alt="сервисный центр CPS">
               </a>
-              <button class="btn button modal-menu__btn modal-menu__btn--right" title="Поиск"><span
-                  class="btn__icon btn__icon--search"></span><span class="visually-hidden">Открыть
-                  поиск</span></button>
+              <button class="btn button modal-menu__btn modal-menu__btn--right" title="Поиск">
+                <span class="btn__icon btn__icon--search"></span>
+                <span class="visually-hidden">Открыть поиск</span>
+              </button>
             </div>
-          </div>
         </header>
-        <ul class="list modal-menu__list">
-          <li class="list-item modal-menu__item">
-            <button class="list__btn modal-menu__item-btn modal-menu__item-btn--active">Ремонт техники</button>
-          </li>
-          <li class="list-item modal-menu__item">
-            <button class="list__btn modal-menu__item-btn">Услуги и сервисы</button>
-          </li>
-          <li class="list-item modal-menu__item">
-            <button class="list__btn modal-menu__item-btn">Корпоративным клиентам</button>
-          </li>
-          <li class="list-item modal-menu__item">
-            <button class="list__btn modal-menu__item-btn">Продавцам техники</button>
-          </li>
-          <li class="list-item modal-menu__item">
-            <button class="list__btn modal-menu__item-btn">Партнерам</button>
-          </li>
-          <li class="list-item modal-menu__item">
-            <button class="list__btn modal-menu__item-btn">Производителям</button>
-          </li>
-          <li class="list-item modal-menu__item">
-            <button class="list__btn modal-menu__item-btn">Наши сервисные центры</button>
-          </li>
-          <li class="list-item modal-menu__item">
-            <button class="list__btn modal-menu__item-btn">Контакты</button>
-          </li>
-        </ul>
+        <nav class="nav">
+          <ul class="nav__list list modal-menu__list">
+            <li class="nav__item modal-menu__nav-item">
+              <a class="nav__link modal-menu__nav-link modal-menu__nav-link--active">Ремонт техники</a>
+            </li>
+            <li class="nav__item modal-menu__nav-item">
+              <a href="#" class="nav__link modal-menu__nav-link">Услуги и сервисы</a>
+            </li>
+            <li class="nav__item modal-menu__nav-item">
+              <a href="#" class="nav__link modal-menu__nav-link">Корпоративным клиентам</a>
+            </li>
+            <li class="nav__item modal-menu__nav-item">
+              <a href="#" class="nav__link modal-menu__nav-link">Продавцам техники</a>
+            </li>
+            <li class="nav__item modal-menu__nav-item">
+              <a href="#" class="nav__link modal-menu__nav-link">Партнерам</a>
+            </li>
+            <li class="nav__item modal-menu__nav-item">
+              <a href="#" class="nav__link modal-menu__nav-link">Производителям</a>
+            </li>
+            <li class="nav__item modal-menu__nav-item">
+              <a href="#" class="nav__link modal-menu__nav-link">Наши сервисные центры</a>
+            </li>
+            <li class="nav__item modal-menu__nav-item">
+              <a href="#" class="nav__link modal-menu__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
         <footer class="modal-menu__footer">
           <ul class="help-list list modal-menu__footer-list">
             <li class="help-list__item modal-menu__footer-item">
-              <button class="btn button modal-menu__footer-btn"><span class="btn__icon btn__icon--phone"></span><span
-                  class="visually-hidden">Заказать
-                  звонок</span></button>
+              <button class="btn button modal-menu__footer-btn">
+                <span class="btn__icon btn__icon--phone"></span>
+                <span class="visually-hidden">Заказать звонок</span>
+              </button>
             </li>
             <li class="help-list__item modal-menu__footer-item">
-              <button class="btn button modal-menu__footer-btn"><span class="btn__icon btn__icon--message"></span><span
-                  class="visually-hidden">Чат с
-                  поддержкой</span></button>
+              <button class="btn button modal-menu__footer-btn">
+                <span class="btn__icon btn__icon--message"></span>
+                <span class="visually-hidden">Чат с поддержкой</span>
+              </button>
             </li>
             <li class="help-list__item  modal-menu__footer-item">
-              <button class="btn button modal-menu__footer-btn"><span class="btn__icon btn__icon--profille"></span><span
-                  class="visually-hidden">Профиль</span></button>
+              <button class="btn button modal-menu__footer-btn">
+                <span class="btn__icon btn__icon--profille"></span>
+                <span class="visually-hidden">Профиль</span>
+              </button>
             </li>
           </ul>
           <address class="modal-menu__address">
@@ -78,9 +85,14 @@
           </address>
           <ul class="modal-menu__lang-list">
             <li class="modal-menu__lang-item"><a href="#"
-                class="modal-menu__lang-link modal-menu__lang-link--active address-link">RU</a></li>
-            <li class="modal-menu__lang-item"><a href="#" class="modal-menu__lang-link address-link">EN</a></li>
-            <li class="modal-menu__lang-item"><a href="#" class="modal-menu__lang-link address-link">CH</a></li>
+                class="modal-menu__lang-link modal-menu__lang-link--active address-link">RU</a>
+            </li>
+            <li class="modal-menu__lang-item">
+              <a href="#" class="modal-menu__lang-link address-link">EN</a>
+            </li>
+            <li class="modal-menu__lang-item">
+              <a href="#" class="modal-menu__lang-link address-link">CH</a>
+            </li>
           </ul>
         </footer>
       </div>

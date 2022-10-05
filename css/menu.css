@@ -42,27 +42,27 @@
     position: relative;
 }
 
-.modal-menu__item {
+.modal-menu__nav-item {
     margin-left: 24px;
     margin-bottom: 24px;
     ;
 }
 
-.modal-menu__item-btn {
-    border: none;
-    background-color: transparent;
-    font-weight: 500;
-    color: #1B1C21;
+.modal-menu__nav-link {
     display: flex;
     align-items: center;
     height: 32px;
+    font-weight: 500;
 }
 
-.modal-menu__item-btn--active {
+.modal-menu__nav-link--active {
     color: #7E7E82;
 }
+.modal-menu__nav-link--active:hover {
+    opacity: 1;
+}
 
-.modal-menu__item-btn--active::before {
+.modal-menu__nav-link--active::before {
     content: "";
     height: 32px;
     position: absolute;
