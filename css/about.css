@@ -1,5 +1,4 @@
-.about {
-    margin: 0;
+.about__inner {
     padding: 0 0 24px 0;
 }
 
@@ -28,7 +27,7 @@
 }
 
 @media (min-width: 768px) {
-    .about {
+    .about__inner {
         padding-bottom: 32px;
     }
 
@@ -67,7 +66,7 @@
 
 @media (min-width: 1120px) {
 
-    .about {
+    .about__inner {
         padding-bottom: 45px;
     }
 
