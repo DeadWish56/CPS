@@ -75,6 +75,7 @@
 }
 
 .modal-menu__lang-link {
+    color: #1B1C21;
     text-decoration: none;
     font-weight: 500;
     transform: opacity 500ms;
