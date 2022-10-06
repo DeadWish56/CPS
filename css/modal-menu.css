@@ -1,50 +1,21 @@
-.body {
-    margin: 0;
-    padding: 0;
-}
-
-.modal {
-    font-family: "TT Lakes", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.modal__wrapper {
-    min-width: 320px;
-    max-width: 1366px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.modal__window {
-    box-sizing: border-box;
-    width: 320px;
-    box-shadow:
-        16px 0px 52px rgba(14, 24, 80, 0.2),
-        2px 0px 4px rgba(69, 79, 126, 0.02);
-    height: 1024px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-}
-
 .modal-menu__logo {
     margin-left: 16px;
+    height: 55px;
 }
 
 .modal-menu__btn--right {
     margin-left: auto;
 }
 
-.modal-menu__list {
+.modal-menu__nav-list {
     flex-direction: column;
     margin-top: 12px;
     position: relative;
 }
 
 .modal-menu__nav-item {
-    margin-left: 24px;
-    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-bottom: 15px;
     ;
 }
 
@@ -53,6 +24,7 @@
     align-items: center;
     height: 32px;
     font-weight: 500;
+    color: #1B1C21;
 }
 
 .modal-menu__nav-link--active {
@@ -73,8 +45,7 @@
 }
 
 .modal-menu__footer {
-    margin: 0 24px 32px 24px;
-    margin-top: auto;
+    margin: 12px 24px 32px 16px;
 
 }
 
@@ -86,29 +57,9 @@
     align-items: flex-start;
 }
 
-.contacts {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-    text-decoration: none;
-    transform: opacity 500ms;
-    font-weight: 500;
-}
-
-.contacts:hover {
-    opacity: 0.5;
-}
-
 .modal-menu__tel {
     margin-top: 12px;
 
-}
-.tel {
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.6px;
-    font-weight: bold;
 }
 
 .modal-menu__lang-list {
@@ -116,11 +67,22 @@
     padding: 0;
     list-style: none;
     display: flex;
-    margin-top: 36px;
+    margin-top: 8px;
 }
 
 .modal-menu__lang-item {
     margin-right: 7px;
+}
+
+.modal-menu__lang-link {
+    text-decoration: none;
+    font-weight: 500;
+    transform: opacity 500ms;
+}
+
+.modal-menu__lang-link:hover {
+    opacity: 0.5;
+    text-decoration: underline;
 }
 
 .modal-menu__lang-link--active {
@@ -129,4 +91,5 @@
 
 .modal-menu__lang-link--active:hover {
     opacity: 1;
+    text-decoration: none;
 }

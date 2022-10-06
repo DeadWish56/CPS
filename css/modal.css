@@ -1,0 +1,23 @@
+.modal {
+    font-family: "TT Lakes", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.modal__wrapper {
+    min-width: 320px;
+    max-width: 1366px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.modal__window {
+    box-sizing: border-box;
+    width: 320px;
+    box-shadow:
+        16px 0px 52px rgba(14, 24, 80, 0.2),
+        2px 0px 4px rgba(69, 79, 126, 0.02);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
