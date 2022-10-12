@@ -9,3 +9,9 @@
     margin: 0 0 16px 0;
     
 }
+
+@media (min-width: 768px) {
+    .section__title {
+        padding-left: 24px;
+    }
+}

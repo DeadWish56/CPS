@@ -2,6 +2,8 @@
 @import url(css/visually-hidden.css);
 @import url(css/title.css);
 @import url(css/section.css);
+@import url(css/btn.css);
+
 
 .page {
     font-family: "TT lakes", sans-serif;
@@ -13,21 +15,12 @@
 
 .page__body {
     min-width: 320px;
-    max-width: 767px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0;
 }
 
-.section__wrapper {
-    margin-left: 12px;
-    position: relative;
-}
-
-.section__swiper {
-    height: 114px;
-}
-
-.section__swiper::after {
+.section__inner::after {
     content: "";
     position: absolute;
     top: 0;
@@ -38,20 +31,28 @@
     z-index: 1;
 }
 
-.swiper-slide {
+.swiper {
+    height: 120px;
+    margin-left: 16px;
+}
+
+.swiper__item {
     display: flex;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     border-radius: 6px;
     align-items: center;
-    height: 72px!important;
+    cursor: pointer;
+    height: 72px;
+    width: 240px;
 }
 
-.swiper-slide__img {
+
+.swiper__img {
     margin-left: 16px;
 }
 
-.swiper-slide__link {
+.swiper__link {
     display: block;
     width: 40px;
     height: 40px;
@@ -62,13 +63,69 @@
     background: url("img/icon-go.svg") no-repeat 50%;
 }
 
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.swiper-pagination-bullet {
+    background-color: #DDDDDD;
+    width: 12px;
+    height: 12px;
+}
+
+.section__btn {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .swiper {
+        height: 170px;
+        margin-left: 24px;
+        transition: height 500ms ease;
+    }
+
+    .swiper__list {
+        flex-wrap: wrap;
+        gap: 16px 24px;
+    }
+
+    .swiper__item {
+        display: flex;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        align-items: center;
+        cursor: pointer;
+        height: 72px;
+        flex-basis: 30%;
+    }
+
+    .section__btn {
+        display: inline-block;
+        margin: 14px 0 32px 24px;
+    }
+    .swiper--height {
+        height: 344px;
+        transition: height 500ms ease;
+    }
+}
+
+/*
+
+
+
 
 
 .swiper-pagination-bullet-active {
-    background-color: #B5B6BC!important;
+    background-color: #B5B6BC;
 }
+
 .swiper-pagination-bullet {
-    background-color: #DDDDDD!important;
-    width: 12px!important;
-    height: 12px!important;
+    background-color: #DDDDDD;
+    width: 12px;
+    height: 12px;
+}
+
+.btn--display--none {
+    display: none;
 }

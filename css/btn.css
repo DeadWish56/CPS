@@ -29,7 +29,6 @@
 
 .btn:hover {
     opacity: 0.5;
-    transform: scale(1.1);
 }
 
 .btn__icon--burger {
@@ -68,4 +67,8 @@
 }
 .btn__expand--arrows {
     background: url("../img/expand-icon.svg") no-repeat 50% 50%;
+}
+.btn__expand--rotate {
+    transform: rotate(180deg);
+    transition: transform 500ms ease;
 }
