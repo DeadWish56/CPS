@@ -1,0 +1,74 @@
+@import url(css/TT-lakes.css);
+@import url(css/visually-hidden.css);
+@import url(css/title.css);
+@import url(css/section.css);
+
+.page {
+    font-family: "TT lakes", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    letter-spacing: -0.2px;
+}
+
+.page__body {
+    min-width: 320px;
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section__wrapper {
+    margin-left: 12px;
+    position: relative;
+}
+
+.section__swiper {
+    height: 114px;
+}
+
+.section__swiper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 26px;
+    height: 100%;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 1;
+}
+
+.swiper-slide {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    align-items: center;
+    height: 72px!important;
+}
+
+.swiper-slide__img {
+    margin-left: 16px;
+}
+
+.swiper-slide__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 16px;
+    background: url("img/icon-go.svg") no-repeat 50%;
+}
+
+
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC!important;
+}
+.swiper-pagination-bullet {
+    background-color: #DDDDDD!important;
+    width: 12px!important;
+    height: 12px!important;
+}
