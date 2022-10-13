@@ -1,164 +1,135 @@
-const slider = document.querySelector('.swiper');
-let mySwiper
+const sliders = document.querySelectorAll('.swiper');
+var mySwiper
 
 function mobileSlider() {
-  if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
-    mySwiper = new Swiper(slider, {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-    
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      slidesPerView: "auto",
-      spaceBetween: 16,
 
-    });
+  for (var i = 0; i < sliders.length; i++) {
+    var slider = sliders[i];
 
-    slider.dataset.mobile = 'true';
-  }
+    if (window.innerWidth < 767 && slider.dataset.mobile == 'false') {
 
-  if (window.innerWidth > 767) {
-    slider.dataset.mobile = 'false';
-    
-    if(slider.classList.contains('swiper-initialized')){
-      mySwiper.destroy();
-    }    
+      mySwiper = new Swiper(slider, {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+          el: slider.querySelector('.swiper-pagination'),
+          clickable: true,
+        },
+        slidesPerView: "auto",
+        spaceBetween: 16,
 
-  }
-}
+      });
 
-mobileSlider ();
-window.addEventListener('resize', () => {
-  mobileSlider ();
-});
-
-
-var btn = document.querySelector('.section__btn');
-var btnIcon = document.querySelector('.btn__expand')
-
-
-btn.onclick = function () {
-  slider.classList.toggle('swiper--height');
-  btnIcon.classList.toggle('btn__expand--rotate')
-
-}
-
-
-
-
-  /*
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
-    
-    spaceBetween: 16,
-
-    breakpoints: {
-      320: {
-        slidesPerView: 1.31,
-      },
-      380: {
-        slidesPerView: 1.6,
-      },
-      460: {
-        slidesPerView: 1.85,
-      },
-      520: {
-        slidesPerView: 2.08,
-      },
-      560: {
-        slidesPerView: 2.25,
-      },
-      620: {
-        slidesPerView: 2.45,
-      },
-      680: {
-        slidesPerView: 2.7,
-      },
-      740: {
-        slidesPerView: 2.9,
-      },
-
+      slider.dataset.mobile = 'true';
     }
 
-  }); */
+    if (window.innerWidth > 767) {
+      slider.dataset.mobile = 'false';
 
-
-/*
-  const slider = document.querySelector('.swiper');
-
-function mobileSlider() {
-  if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
-    mySwiper = new Swiper(slider, {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-    
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-  
-      
-      spaceBetween: 16,
-  
-      breakpoints: {
-        320: {
-          slidesPerView: 1.31,
-        },
-        380: {
-          slidesPerView: 1.6,
-        },
-        460: {
-          slidesPerView: 1.85,
-        },
-        520: {
-          slidesPerView: 2.08,
-        },
-        560: {
-          slidesPerView: 2.25,
-        },
-        620: {
-          slidesPerView: 2.45,
-        },
-        680: {
-          slidesPerView: 2.7,
-        },
-        740: {
-          slidesPerView: 2.9,
-        },
-  
+      if (slider.classList.contains('swiper-initialized')) {
+        mySwiper.destroy();
       }
-  
-    });
-
-    slider.dataset.mobile = 'true';
-  }
-
-  if (window.innerWidth > 768) {
-    slider.dataset.mobile = 'false';
-    if (slider.classList.contains('swiper-container-initialized')) {
-      mySwiper.destroy();
     }
+
   }
+
 }
 
-mobileSlider()
-
+mobileSlider();
 window.addEventListener('resize', () => {
   mobileSlider();
 });
+
+var buttons = document.querySelectorAll('.section__btn');
+var btnIcon = document.querySelectorAll('.btn__expand')
+var sectionsHeight = document.querySelectorAll('.section__inner')
+var buttonsText = document.querySelectorAll('.btn__text')
+
+
+
+
+
+var clickButton = function (button) {
+  button.addEventListener('click', function () {
+    btnIcon();
+    sectionHeigth();
+    if (sectionHeight.classList.contains('swiper--height')) {
+      buttonText.textContent = 'Скрыть'
+    } else {
+      buttonText.textContent = 'Показать все'
+    }
+
+  });
+
+  var btnIcon = function () {
+    btnIcons.classList.toggle('btn__expand--rotate');
+  }
+
+  var sectionHeigth = function () {
+    sectionHeight.classList.toggle('swiper--height')
+  }
+
+};
+
+
+for (var i = 0; i < buttons.length; i++) {
+  clickButton(buttons[i]);
+  var sectionHeight = sectionsHeight[i];
+  var btnIcons = btnIcon[i];
+  var buttonText = buttonsText[i]
+};
+
+
+
+
+/* для одной секции
+var clickButton = function (button) {
+  button.addEventListener ('click', function () {
+    console.log(button);
+    btnIc();
+  });
+
+  var btnIc = function () {
+  btnIcons.classList.toggle('btn__expand--rotate');
+  console.log(btnIcons)
+
+}
+};
+
+
+for (var i = 0; i < buttons.length; i++) {
+  clickButton(buttons[i])
+  
+  var btnIcons = btnIcon[i]
+
+};
+
+рабочий код для одного элемента
+
+var clickButton = function (button) {
+  button.addEventListener('click', function () {
+    console.log(button);
+    btnIcon();
+    sectionHeigth();
+  });
+
+var btnIcon = function () {
+  btnIcons.classList.toggle('btn__expand--rotate');
+  console.log(btnIcons)
+}
+
+var sectionHeigth = function () {
+  sectionHeight.classList.toggle('swiper--height')
+}
+
+};
+
+
+for (var i = 0; i < buttons.length; i++) {
+  clickButton(buttons[i]);
+  var sectionHeight = sectionsHeight[i];
+  var btnIcons = btnIcon[i];
+
+};
+
 */

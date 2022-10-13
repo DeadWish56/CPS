@@ -64,11 +64,11 @@
     width: 24px;
     height: 24px;
     vertical-align: top;
+    transition: transform 500ms ease;
 }
 .btn__expand--arrows {
     background: url("../img/expand-icon.svg") no-repeat 50% 50%;
 }
 .btn__expand--rotate {
     transform: rotate(180deg);
-    transition: transform 500ms ease;
 }
