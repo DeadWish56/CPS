@@ -53,7 +53,7 @@ var clickButton = function (button) {
   button.addEventListener('click', function () {
     btnIcon();
     sectionHeigth();
-    if (sectionHeight.classList.contains('swiper--height')) {
+    if (sectionHeight.classList.contains('section__inner--height')) {
       buttonText.textContent = 'Скрыть'
     } else {
       buttonText.textContent = 'Показать все'
@@ -66,7 +66,7 @@ var clickButton = function (button) {
   }
 
   var sectionHeigth = function () {
-    sectionHeight.classList.toggle('swiper--height')
+    sectionHeight.classList.toggle('section__inner--height')
   }
 
 };
