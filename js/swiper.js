@@ -1,13 +1,11 @@
 const sliders = document.querySelectorAll('.swiper');
-var mySwiper
+let mySwiper = null;
 
 function mobileSlider() {
-
-  for (var i = 0; i < sliders.length; i++) {
-    var slider = sliders[i];
+  for (let i = 0; i < sliders.length; i++) {
+    let slider = sliders[i];
 
     if (window.innerWidth < 767 && slider.dataset.mobile == 'false') {
-
       mySwiper = new Swiper(slider, {
         direction: 'horizontal',
         loop: true,
@@ -17,8 +15,7 @@ function mobileSlider() {
         },
         slidesPerView: "auto",
         spaceBetween: 16,
-
-      });
+      })
 
       slider.dataset.mobile = 'true';
     }
@@ -31,11 +28,11 @@ function mobileSlider() {
       }
     }
 
+
+
   }
-
 }
-
-mobileSlider();
-window.addEventListener('resize', () => {
-  mobileSlider();
-});
+    mobileSlider();
+    window.addEventListener('resize', () => {
+      mobileSlider();
+    });
