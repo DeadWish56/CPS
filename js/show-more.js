@@ -13,7 +13,7 @@ for (let i = 0; i < buttons.length; i++) {
     sectionHeight.classList.toggle('section__inner--height');
     buttonIcon.classList.toggle('btn__expand--rotate');
 
-    if (sectionHeight.classList.contains('section__inner--height')) {
+    if (buttonIcon.classList.contains('btn__expand--rotate')) {
       buttonText.textContent = 'Скрыть';
     } else {
       buttonText.textContent = 'Показать все';

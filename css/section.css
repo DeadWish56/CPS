@@ -31,7 +31,6 @@
     display: none;
 }
 
-
 @media (min-width: 768px) {
     .section__title {
         padding-left: 24px;
@@ -50,7 +49,7 @@
         display: none;
     }
 
-    .section__btn--display--none {
+    .section__btn {
         display: inline-block;
     }
 
