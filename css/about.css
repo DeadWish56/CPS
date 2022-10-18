@@ -27,6 +27,7 @@
 }
 
 @media (min-width: 768px) {
+
     .about__inner {
         padding-bottom: 32px;
     }

@@ -1,7 +1,7 @@
 let buttons = document.querySelectorAll('.section__btn');
-let buttonsIcon = document.querySelectorAll('.btn__expand')
-let sectionsHeight = document.querySelectorAll('.section__inner')
-let buttonsText = document.querySelectorAll('.btn__text')
+let buttonsIcon = document.querySelectorAll('.btn__expand');
+let sectionsHeight = document.querySelectorAll('.section__inner');
+let buttonsText = document.querySelectorAll('.btn__text');
 
 for (let i = 0; i < buttons.length; i++) {
   let button = buttons[i];
@@ -20,9 +20,6 @@ for (let i = 0; i < buttons.length; i++) {
     }
   }
 }
-
-
-
 
 /*
 let clickOnButtonShowMore = function (button, sectionHeight, buttonIcon, buttonText) {

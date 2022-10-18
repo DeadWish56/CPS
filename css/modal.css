@@ -23,6 +23,7 @@
 }
 
 @media (min-width: 360px) {
+    
     .modal__window {
         width: 360px;
     }

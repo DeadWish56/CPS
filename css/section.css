@@ -32,6 +32,7 @@
 }
 
 @media (min-width: 768px) {
+
     .section__title {
         padding-left: 24px;
     }

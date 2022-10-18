@@ -6,7 +6,6 @@
     font-weight: 300;
 }
 
-
 .title--pseudo::before {
     content: "";
     height: 1.4em;

@@ -27,9 +27,7 @@ function mobileSlider() {
         mySwiper.destroy();
       }
     }
-
-
-
+    
   }
 }
     mobileSlider();
