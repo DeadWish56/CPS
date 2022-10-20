@@ -4,7 +4,7 @@
 
 .section__inner {
     height: 120px;
-    margin-left: 16px;
+    padding: 5px 0px 5px 16px;
     transition: height 500ms ease;
 }
 
@@ -23,11 +23,11 @@
     padding: 16px;
     background: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
     box-shadow: 0 -1px 0 0 #D9FFF5;
-    margin: 0 0 16px 0;
+    margin: 1px 0 16px 0;
 
 }
 
-.section__btn--display--none {
+.section__btn {
     display: none;
 }
 
@@ -39,7 +39,7 @@
 
     .section__inner {
         height: 170px;
-        margin-left: 22px;
+        padding-left: 22px;
     }
 
     .section__inner--height {
@@ -66,7 +66,7 @@
     }
 
     .section__inner {
-        margin-left: 30px;
+        padding-left: 30px;
     }
 
     .section__btn {
