@@ -35,6 +35,11 @@
     background: #FF3E79 url("../img/icon-burger.svg") no-repeat 50%;
 }
 
+.btn__icon--close {
+    background: #FF3E79 url("../img/icon-close.svg") no-repeat 50%;
+}
+
+
 .btn__icon--search {
     background: #FF3E79 url("../img/icon-search.svg") no-repeat 50%;
 }
@@ -66,9 +71,11 @@
     vertical-align: top;
     transition: transform 500ms ease;
 }
+
 .btn__expand--arrows {
     background: url("../img/expand-icon.svg") no-repeat 50% 50%;
 }
+
 .btn__expand--rotate {
     transform: rotate(180deg);
 }

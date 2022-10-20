@@ -9,6 +9,7 @@
     max-width: 1366px;
     margin: 0 auto;
     overflow: hidden;
+    height: auto;
 }
 
 .modal__window {
@@ -20,11 +21,19 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 @media (min-width: 360px) {
     
     .modal__window {
         width: 360px;
+    }
+}
+
+@media (min-width: 460px) {
+    
+    .modal__window {
+        width: 320px;
     }
 }

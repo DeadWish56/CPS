@@ -93,3 +93,24 @@
     opacity: 1;
     text-decoration: none;
 }
+
+@media (min-width: 360px) {
+    .modal-menu__nav-item {
+        margin-left: 24px;
+    }
+
+    .modal-menu__footer {
+        margin-left: 24px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-menu__footer {
+        margin-top: 268px;
+    }
+
+    .modal-menu__lang-list {
+        margin-top: 40px;
+    }
+}
