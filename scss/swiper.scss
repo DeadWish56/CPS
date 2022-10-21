@@ -1,0 +1,12 @@
+$var1: #B5B6BC;
+$var2: #DDDDDD;
+
+.swiper-pagination-bullet-active {
+	background-color: $var1;
+}
+
+.swiper-pagination-bullet {
+	background-color: $var2;
+	width: 12px;
+	height: 12px;
+}

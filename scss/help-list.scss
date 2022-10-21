@@ -1,0 +1,16 @@
+.help-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    &__item {
+        margin: 0;
+        padding: 0;
+        height: 40px;
+
+        &:not(:first-of-type) {
+            margin-left: 16px;
+        }
+    }
+}

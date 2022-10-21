@@ -1,0 +1,115 @@
+$var1: #1B1C21;
+$var2: #7E7E82;
+$var3: #41F6D7;
+
+.modal-menu {
+    &__logo {
+        margin-left: 16px;
+        height: 55px;
+    }
+
+    &__btn--right {
+        margin-left: auto;
+    }
+
+    &__nav-list {
+        flex-direction: column;
+        margin-top: 12px;
+        position: relative;
+    }
+
+    &__nav-item {
+        margin-left: 16px;
+        margin-bottom: 15px;
+
+        @media (min-width: 360px) {
+            margin-left: 24px;
+        }
+    }
+
+    &__nav-link {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        font-weight: 500;
+        color: $var1;
+
+        &--active {
+            color: $var2;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &::before {
+                content: "";
+                height: 32px;
+                position: absolute;
+                border-left: 8px solid $var3;
+                border-radius: 4px;
+                left: -4px;
+            }
+        }
+    }
+
+    &__footer {
+        margin: 12px 24px 32px 16px;
+
+        @media (min-width: 360px) {
+            margin-left: 24px;
+        }
+
+        @media (min-width: 768px) {
+            margin-top: 268px;
+        }
+    }
+
+    &__address {
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        align-items: flex-start;
+    }
+
+    &__tel {
+        margin-top: 12px;
+    }
+
+    &__lang-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        margin-top: 8px;
+
+        @media (min-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+
+    &__lang-item {
+        margin-right: 7px;
+    }
+
+    &__lang-link {
+        color: $var1;
+        text-decoration: none;
+        font-weight: 500;
+        transform: opacity 500ms;
+
+        &:hover {
+            opacity: 0.5;
+            text-decoration: underline;
+        }
+
+        &--active {
+            color: $var2;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+            }
+        }
+    }
+}

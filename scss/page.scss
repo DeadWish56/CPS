@@ -1,0 +1,34 @@
+$var1: #1B1C21;
+$var2: #f8f8f8;
+
+.page {
+    font-family: "TT lakes", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $var1;
+    letter-spacing: -0.2px;
+
+    &__body {
+        min-width: 320px;
+        max-width: 767px;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+
+
+        @media (min-width: 768px) {
+            min-width: 768px;
+            max-width: 1119px;
+        }
+
+        @media (min-width: 1120px) {
+            min-width: 1120px;
+            max-width: 1366px;
+        }
+    }
+
+
+    &__main {
+        background-color: $var2;
+    }
+}

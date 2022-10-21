@@ -1,0 +1,19 @@
+$var1: #7E7E82;
+$var2: #41F6D7;
+
+.title {
+    text-transform: uppercase;
+    color: $var1;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+
+    &--pseudo::before {
+        content: "";
+        height: 1.4em;
+        border-left: 8px solid $var2;
+        border-radius: 6px;
+        left: -4px;
+        position: absolute;
+    }
+}
