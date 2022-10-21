@@ -1,5 +1,9 @@
+
+
+
+
 let buttons = document.querySelectorAll('.section__btn');
-let buttonsIcon = document.querySelectorAll('.btn__expand');
+let buttonsIcon = document.querySelectorAll('.show-more');
 let sectionsHeight = document.querySelectorAll('.section__inner');
 let buttonsText = document.querySelectorAll('.btn__text');
 
