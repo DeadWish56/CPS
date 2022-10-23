@@ -1,0 +1,23 @@
+.footer {
+    &__text {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #7E7E82;
+        mix-blend-mode: normal;
+        opacity: 0.72;
+        margin: 0;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #7E7E82;
+        transition: color 500ms ease;
+        &:hover {
+            color: red;
+        }
+    }
+}

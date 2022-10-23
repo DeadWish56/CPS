@@ -32,6 +32,11 @@ $var2: #f8f8f8;
         }
     }
 
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
 
     &__main {
         background-color: $var2;
