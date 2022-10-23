@@ -1,6 +1,7 @@
 $var1: #FFFFFF;
 $var2: #EAEAEA;
 $var3: #FF3E79;
+$var4: #1B1C21;
 
 .cards {
     overflow: hidden;
@@ -11,6 +12,7 @@ $var3: #FF3E79;
         list-style: none;
         display: flex;
         box-sizing: content-box;
+        height: 100%;
 
         @media (min-width: 768px) {
             flex-wrap: wrap;
@@ -33,7 +35,7 @@ $var3: #FF3E79;
 
         &:hover {
             box-shadow: 0px 0px 5px 0px;
-            transform: scale(1.05);
+            transform: scale(1.01);
         }
 
         @media (min-width: 768px) {
@@ -53,10 +55,21 @@ $var3: #FF3E79;
         height: 100%;
         border-radius: 6px;
         align-items: center;
+        text-decoration: none;
     }
 
     &__logo {
         margin-left: 16px;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $var4;
+        font-weight: 600;
+        margin: 16px 0 0 16px;
+        flex-basis: 65%;
     }
 
     &__img {

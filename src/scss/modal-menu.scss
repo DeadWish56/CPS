@@ -6,6 +6,18 @@ $var3: #41F6D7;
     &__logo {
         margin-left: 16px;
         height: 55px;
+        @media (min-width: 1366px) {
+            margin: 0;
+        }
+
+    }
+
+    &__btn {
+        &--display {
+            @media (min-width: 1366px) {
+                display: none;
+            }
+        }
     }
 
     &__btn--right {
