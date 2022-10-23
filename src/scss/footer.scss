@@ -10,6 +10,15 @@
         &:not(:last-child) {
             margin-bottom: 16px;
         }
+
+        @media (min-width: 768px) {
+            text-align: left;
+            flex-basis: 33%;
+        }
+
+        &--align--right {
+            text-align: right;
+        }
     }
 
     &__link {

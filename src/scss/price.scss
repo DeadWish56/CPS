@@ -4,6 +4,9 @@ $color-alternate: #7E7E82;
     &__inner {
         padding-bottom: 140px;
         padding-left: 8px;
+        @media (min-width: 768px) {
+            display: none;
+        }
     }
 
 
@@ -22,6 +25,9 @@ $color-alternate: #7E7E82;
         letter-spacing: 0.2px;
         margin: 0 0 40px 16px;
         padding-right: 16px;
+        @media (min-width: 768px) {
+            max-width: 435px;
+        }
     }
 
     &__description-link {

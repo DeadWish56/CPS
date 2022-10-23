@@ -36,6 +36,10 @@ $var2: #f8f8f8;
         display: flex;
         flex-direction: column;
         padding: 16px;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            padding: 32px 24px 25px 24px;
+        }
     }
 
     &__main {

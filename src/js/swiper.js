@@ -19,7 +19,7 @@ function mobileSlider() {
       slider.dataset.mobile = 'true';
     }
 
-    if (window.innerWidth > 767 && slider.dataset.mobile == 'true') {
+    if (window.innerWidth >= 768 && slider.dataset.mobile == 'true') {
       slider.dataset.mobile = 'false';
 
       if (slider.dataset.mobile == 'false') {
