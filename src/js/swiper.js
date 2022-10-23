@@ -23,7 +23,7 @@ function mobileSlider() {
       slider.dataset.mobile = 'false';
 
       if (slider.dataset.mobile == 'false') {
-        swiper.destroy();
+        swiper.disable();
       }
     }
   }

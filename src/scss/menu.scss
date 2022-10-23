@@ -30,6 +30,7 @@ $var4: #1B1C21;
 
     &__help-list {
 
+
         &--display--none {
             display: none;
 
@@ -44,6 +45,10 @@ $var4: #1B1C21;
         }
     }
 
+    &__nav {
+        position: relative;
+    }
+
     &__nav-list {
         display: flex;
         overflow-x: scroll;
@@ -53,7 +58,7 @@ $var4: #1B1C21;
 
         &::after {
             content: "";
-            position: fixed;
+            position: absolute;
             right: -1px;
             width: 25px;
             height: 40px;

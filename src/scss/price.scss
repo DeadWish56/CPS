@@ -1,0 +1,41 @@
+$color-alternate: #7E7E82;
+
+.price {
+    &__inner {
+        padding-bottom: 140px;
+        padding-left: 8px;
+    }
+
+
+    &__list-item {
+        height: 205px;
+        width: 260px;
+    }
+
+    &__services {
+        margin: 16px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin: 0 0 0 16px;
+        padding-right: 16px;
+    }
+
+    &__description-link {
+        display: block;
+        margin-top: 16px;
+        text-decoration: none;
+    }
+
+    &__link-icon {
+        display: inline-block;
+        width: 24px;
+        height: 27px;
+        margin-right: 16px;
+        background: url('../img/icon-go.svg') no-repeat 50%;
+        vertical-align: middle;
+    }
+}
