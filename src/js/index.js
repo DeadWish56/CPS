@@ -1,4 +1,4 @@
-import showmore from './showmore'
+import './showmore'
 
 import '../scss/style.scss';
 
