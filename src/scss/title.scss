@@ -1,5 +1,5 @@
 $var1: #7E7E82;
-$var2: #41F6D7;
+$var3: #F8F8F8;
 
 .title {
     text-transform: uppercase;
@@ -7,13 +7,14 @@ $var2: #41F6D7;
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+    padding: 16px;
+    background: linear-gradient(270deg, #FFFFFF 0%, $var3 98.61%);
 
-    &--pseudo::before {
-        content: "";
-        height: 1.4em;
-        border-left: 8px solid $var2;
-        border-radius: 6px;
-        left: -4px;
-        position: absolute;
+    @media (min-width: 768px) {
+        padding-left: 24px;
+    }
+
+    @media (min-width: 1120px) {
+        padding-left: 32px;
     }
 }

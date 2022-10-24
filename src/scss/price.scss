@@ -4,9 +4,6 @@ $color-alternate: #7E7E82;
     &__inner {
         padding-bottom: 140px;
         padding-left: 8px;
-        @media (min-width: 768px) {
-            display: none;
-        }
     }
 
 

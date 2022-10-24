@@ -1,4 +1,5 @@
 $var1: #1b1c21;
+$var2: #41F6D7;
 
 .title-modal {
     padding: 0 0 0 16px;
@@ -8,4 +9,12 @@ $var1: #1b1c21;
     color: $var1;
     text-transform: none;
     letter-spacing: -0.6px;
+    &::before {
+        content: "";
+        height: 1.4em;
+        border-left: 8px solid $var2;
+        border-radius: 6px;
+        left: -4px;
+        position: absolute;
+    }
 }

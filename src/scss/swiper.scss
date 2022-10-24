@@ -1,5 +1,90 @@
 $var1: #B5B6BC;
 $var2: #DDDDDD;
+$var3: #F8F8F8;
+$var4: #D9FFF5;
+$var5: #FFFFFF;
+$var6: #EAEAEA;
+
+.swiper {
+	height: 120px;
+	padding: 5px 0px 5px 16px;
+	transition: height 500ms ease;
+
+	@media (min-width: 768px) {
+		height: 170px;
+		padding-left: 22px;
+	}
+
+	@media (min-width: 1120px) {
+		padding-left: 30px;
+	}
+
+	&--height {
+		@media (min-width: 768px) {
+			height: auto;
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 26px;
+		height: 100%;
+		background: linear-gradient(270deg, $var3 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+		z-index: 2;
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+.swiper-wrapper  {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	box-sizing: content-box;
+
+	@media (min-width: 768px) {
+		flex-wrap: wrap;
+		gap: 16px 24px;
+	}
+
+	@media (min-width: 1120px) {
+		gap: 16px 32px;
+	}
+}
+
+.swiper-slide {
+	background: $var5;
+	border: 1px solid $var6;
+	border-radius: 6px;
+	height: 72px;
+	width: 240px;
+	transition: transform 500ms ease;
+
+	&:hover {
+		box-shadow: 0px 0px 5px 0px;
+		transform: scale(1.01);
+	}
+
+	@media (min-width: 768px) {
+		flex-basis: 30%;
+	}
+
+	@media (min-width: 1120px) {
+		flex-basis: 22%;
+	}
+}
+
+.swiper-pagination {
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
 
 .swiper-pagination-bullet-active {
 	background-color: $var1;

@@ -2,9 +2,9 @@
 
 
 
-let buttons = document.querySelectorAll('.section__btn');
+let buttons = document.querySelectorAll('.showmore-btn');
 let buttonsIcon = document.querySelectorAll('.show-more');
-let sectionsHeight = document.querySelectorAll('.section__inner');
+let sectionsHeight = document.querySelectorAll('.swiper');
 let buttonsText = document.querySelectorAll('.btn__text');
 
 for (let i = 0; i < buttons.length; i++) {
@@ -14,7 +14,7 @@ for (let i = 0; i < buttons.length; i++) {
   let buttonText = buttonsText[i];
 
   button.onclick = function () {
-    sectionHeight.classList.toggle('section__inner--height');
+    sectionHeight.classList.toggle('swiper--height');
     buttonIcon.classList.toggle('btn__expand--rotate');
 
     if (buttonIcon.classList.contains('btn__expand--rotate')) {

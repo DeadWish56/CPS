@@ -1,13 +1,13 @@
 .repair {
-    &__cards {
-            padding-bottom: 95px;
+    &__inner {
+        padding-bottom: 95px;
 
         @media (min-width: 768px) {
             padding-bottom: 5px;
         }
     }
 
-    &__card-item {
+    &__card {
         height: 160px;
     }
 
