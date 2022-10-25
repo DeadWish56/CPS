@@ -6,7 +6,7 @@ for (let i = 0; i < sliders.length; i++) {
   let slider = sliders[i];
   let mySlider;
   function mobileSlider() {
-    if (window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
+    if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
       mySlider = new Swiper(slider, {
         slidesPerView: "auto",
         spaceBetween: 16,
@@ -20,7 +20,7 @@ for (let i = 0; i < sliders.length; i++) {
       slider.dataset.mobile = 'true';
     }
   
-    if (window.innerWidth > 768 && slider.dataset.mobile == 'true') {
+    if (window.innerWidth >= 768 && slider.dataset.mobile == 'true') {
       slider.dataset.mobile = 'false';
   
       if (slider.classList.contains('swiper-initialized')) {

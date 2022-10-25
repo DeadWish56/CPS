@@ -2,32 +2,144 @@ $color-alternate: #7E7E82;
 
 .price {
     &__inner {
-        padding-bottom: 140px;
+        padding-bottom: 130px;
         padding-left: 8px;
+
+        @media (min-width: 768px) {
+            padding: 0 24px;
+            height: 100%;
+        }
     }
 
-
-    &__list-item {
-        height: 205px;
-        width: 260px;
+    &__list {
+        @media (min-width: 768px) {
+            display: table;
+        }
     }
 
-    &__services {
-        margin: 16px;
+    &__card {
+        height: 166px;
+        width: 226px;
+        padding: 16px;
+
+        &--display--none {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            display: table-row;
+            height: 68px;
+        }
+
+        &:not(:last-of-type)::after {
+            @media (min-width: 768px) {
+                content: "";
+                position: absolute;
+                width: 96%;
+                bottom: 1px;
+                left: 15px;
+                border-bottom: 1px solid #EAEAEA;
+            }
+        }
+
+        &:hover {
+            @media (min-width: 768px) {}
+        }
     }
 
-    &__description {
+    &__card-head {
+        margin: 0px 0px 4px 0;
+        color: $color-alternate;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__card-description {
+
+        @media (min-width: 768px) {
+            display: table-cell;
+            vertical-align: middle;
+            min-width: 320px;
+            padding-left: 16px;
+        }
+
+        &:not(:first-of-type) {
+            margin-top: 0px;
+        }
+    }
+
+    &__card-cost {
+        margin: 0 0 16px 0;
+
+        @media (min-width: 768px) {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0;
+            min-width: 80px;
+        }
+    }
+
+    &__card-time {
+        margin: 0px;
+
+        @media (min-width: 768px) {
+            display: table-cell;
+            vertical-align: middle;
+            min-width: 100px;
+        }
+    }
+
+    &__card-link {
+        @media (min-width: 768px) {
+            display: table-cell;
+            text-decoration: none;
+            min-width: 100px;
+        }
+    }
+
+    &__purchase {
+        color: #FFF;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-color: #FF3E79;
+        padding: 4px 32px 4px 12px;
+        border-radius: 16px;
+        background-image: url("../img/icon-goside.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 16px;
+        bottom: 12px;
+        background-position: 85% 10px;
+
+        @media (min-width: 768px) {
+            display: inline-block;
+            vertical-align: middle;
+            width: 70px;
+            height: 24px;
+            top: 16px;
+            right: 2%;
+        }
+        
+    }
+
+    &__text {
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2px;
         margin: 0 0 40px 16px;
         padding-right: 16px;
+
         @media (min-width: 768px) {
             max-width: 435px;
         }
     }
 
-    &__description-link {
+    &__link {
         display: block;
         margin-top: 16px;
         text-decoration: none;
@@ -40,5 +152,16 @@ $color-alternate: #7E7E82;
         margin-right: 16px;
         background: url('../img/icon-go.svg') no-repeat 50%;
         vertical-align: middle;
+    }
+
+    &__table-header {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: table-row;
+            background-color: #f8f8f8;
+            height: 40px;
+            color: #7E7E82;
+        }
     }
 }

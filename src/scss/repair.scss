@@ -1,6 +1,6 @@
 .repair {
     &__inner {
-        padding-bottom: 95px;
+        padding-bottom: 90px;
 
         @media (min-width: 768px) {
             padding-bottom: 5px;
@@ -9,10 +9,6 @@
 
     &__card {
         height: 160px;
-    }
-
-    &__card-title {
-        align-self: flex-start;
     }
 
     &__card-img {

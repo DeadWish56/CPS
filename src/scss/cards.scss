@@ -50,7 +50,8 @@ $var6: #EAEAEA;
         color: $var4;
         font-weight: 600;
         margin: 16px 0 0 16px;
-        flex-basis: 65%;
+        flex-basis: 66%;
+        align-self: flex-start;
     }
 
     &__img {
