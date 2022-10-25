@@ -9,6 +9,10 @@ $color-alternate: #7E7E82;
             padding: 0 24px;
             height: 100%;
         }
+
+        @media (min-width: 768px) {
+            padding: 0 32px;
+        }
     }
 
     &__list {

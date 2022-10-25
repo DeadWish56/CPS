@@ -12,11 +12,13 @@ $var6: #EAEAEA;
 
 	@media (min-width: 768px) {
 		height: 170px;
-		padding-left: 22px;
+		padding-left: 24px;
+		padding-right: 24px;
 	}
 
 	@media (min-width: 1120px) {
-		padding-left: 30px;
+		padding-left: 32px;
+		padding-right: 32px;
 	}
 
 	&--height {
@@ -38,6 +40,9 @@ $var6: #EAEAEA;
 		@media (min-width: 768px) {
 			display: none;
 		}
+		@media (min-width: 1120px) {
+		display: none;
+		}
 	}
 }
 
@@ -46,7 +51,6 @@ $var6: #EAEAEA;
 	padding: 0;
 	list-style: none;
 	display: flex;
-	box-sizing: content-box;
 
 	@media (min-width: 768px) {
 		flex-wrap: wrap;
@@ -72,11 +76,11 @@ $var6: #EAEAEA;
 	}
 
 	@media (min-width: 768px) {
-		flex-basis: 30%;
+		min-width: 30%;
 	}
 
 	@media (min-width: 1120px) {
-		flex-basis: 22%;
+		min-width: 22%;
 	}
 }
 
