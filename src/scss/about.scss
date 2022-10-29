@@ -39,42 +39,23 @@
         line-height: 18px;
         letter-spacing: 0.2px;
         margin-bottom: 16px;
-
-        &:last-of-type {
-            @media (min-width: 768px) {
-                margin-bottom: 8px;
-            }
-
-            @media (min-width: 1120px) {
-                margin-bottom: 15px;
-            }
-        }
-
-        &--display--none {
-            display: none;
-
-            @media (min-width: 768px) {
-                display: block;
-            }
-        }
-
-        &--display--block {
-            display: none;
-
-            @media (min-width: 1120px) {
-                display: inline;
-            }
-        }
+        height: 90px;
+        overflow: hidden;
 
         @media (min-width: 768px) {
             margin-right: 48px;
             margin-top: 5px;
+            height: 145px;
         }
 
         @media (min-width: 1120px) {
             margin-top: 10px;
             margin-right: 20px;
         }
+
+    &--height {
+        height: auto;
+    }
     }
 
     &__img {
