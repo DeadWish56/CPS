@@ -1,15 +1,15 @@
 .repair {
     &__inner {
         padding-bottom: 90px;
+
         @media (min-width: 768px) {
             padding-bottom: 5px;
         }
-        @media (min-width: 1120px) {
-        }
+
+        @media (min-width: 1120px) {}
     }
 
-    &__list {
-    }
+    &__list {}
 
     &__card {
         height: 160px;

@@ -10,7 +10,7 @@ $color-alternate: #7E7E82;
             height: 100%;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1120px) {
             padding: 0 32px;
         }
     }
@@ -22,9 +22,10 @@ $color-alternate: #7E7E82;
     }
 
     &__card {
-        height: 166px;
-        width: 226px;
+        height: 200px;
+        width: 260px;
         padding: 16px;
+        box-sizing: border-box;
 
         &--display--none {
             display: none;
@@ -39,15 +40,18 @@ $color-alternate: #7E7E82;
             @media (min-width: 768px) {
                 content: "";
                 position: absolute;
-                width: 96%;
+                width: 97%;
                 bottom: 1px;
-                left: 15px;
+                left: 13px;
                 border-bottom: 1px solid #EAEAEA;
             }
         }
 
         &:hover {
-            @media (min-width: 768px) {}
+            @media (min-width: 768px) {
+                transform: none;
+                box-shadow: none;
+            }
         }
     }
 
@@ -82,6 +86,12 @@ $color-alternate: #7E7E82;
             vertical-align: middle;
             margin: 0;
             min-width: 80px;
+        }
+        @media (min-width: 1120px) {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0;
+            min-width: 140px;
         }
     }
 
@@ -140,6 +150,13 @@ $color-alternate: #7E7E82;
 
         @media (min-width: 768px) {
             max-width: 435px;
+            margin-top: 24px;
+            margin-left: 24px;
+        }
+
+        @media (min-width: 1120px) {
+            margin-top: 32px;
+            margin-left: 32px;
         }
     }
 
