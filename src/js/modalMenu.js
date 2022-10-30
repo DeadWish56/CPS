@@ -10,3 +10,10 @@ openButton.onclick = function () {
 closeButton.onclick = function () {
     modalMenu.classList.toggle('page__modal-menu--display')
 }
+
+overlay.addEventListener('click', function (evt) {
+    if (evt.target == this) {
+        modalMenu.classList.toggle('page__modal-menu--display')
+        console.log(evt)
+    }
+})

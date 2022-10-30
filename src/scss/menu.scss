@@ -52,9 +52,15 @@ $var4: #1B1C21;
     &__nav-list {
         display: flex;
         overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         margin-left: 16px;
         align-items: center;
         margin-bottom: 24px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         &::after {
             content: "";

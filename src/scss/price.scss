@@ -18,6 +18,7 @@ $color-alternate: #7E7E82;
     &__list {
         @media (min-width: 768px) {
             display: table;
+            border-collapse: collapse;
         }
     }
 
@@ -34,6 +35,8 @@ $color-alternate: #7E7E82;
         @media (min-width: 768px) {
             display: table-row;
             height: 68px;
+            border-radius: 0;
+            border: none;
         }
 
         &:not(:last-of-type)::after {
@@ -87,6 +90,7 @@ $color-alternate: #7E7E82;
             margin: 0;
             min-width: 80px;
         }
+
         @media (min-width: 1120px) {
             display: table-cell;
             vertical-align: middle;
@@ -110,6 +114,9 @@ $color-alternate: #7E7E82;
             display: table-cell;
             text-decoration: none;
             min-width: 100px;
+            cursor: default;            
+            text-align: center;
+            vertical-align: middle;
         }
     }
 
@@ -130,15 +137,20 @@ $color-alternate: #7E7E82;
         bottom: 12px;
         background-position: 85% 10px;
 
+    &:hover {
+        @media (min-width: 768px) {
+        background-color: $color-alternate;
+    }
+    }
+
         @media (min-width: 768px) {
             display: inline-block;
-            vertical-align: middle;
+            position: static;
             width: 70px;
             height: 24px;
-            top: 16px;
-            right: 2%;
+            cursor: pointer;
         }
-        
+
     }
 
     &__text {
