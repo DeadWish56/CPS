@@ -3,9 +3,24 @@ $var2: #7E7E82;
 $var3: #41F6D7;
 
 .modal-menu {
+    
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &--display {
+        display: none;
+    }
+
+    @media (min-width: 1366px) {
+        display: block;
+        position: static;
+        width: 320px;
+    }
+
     &__logo {
         margin-left: 16px;
         height: 55px;
+
         @media (min-width: 1366px) {
             margin: 0;
         }
