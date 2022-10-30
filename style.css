@@ -383,14 +383,23 @@
     z-index: 3;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
     .page__modal-menu--display {
       display: none; }
+    @media (min-width: 768px) {
+      .page__modal-menu {
+        height: 100%; } }
     @media (min-width: 1366px) {
       .page__modal-menu {
         display: block;
         position: static;
         width: 320px; } }
+    .page__modal-menu::-webkit-scrollbar {
+      display: none; }
 
 .btn {
   transition: opacity 500ms, transform 500ms;
@@ -606,9 +615,13 @@
 .menu__nav-list {
   display: flex;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   margin-left: 16px;
   align-items: center;
   margin-bottom: 24px; }
+  .menu__nav-list::-webkit-scrollbar {
+    display: none; }
   .menu__nav-list::after {
     content: "";
     position: absolute;
@@ -738,6 +751,9 @@
     margin: 0 auto;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.96); }
+    @media (min-width: 768px) {
+      .modal__wrapper {
+        height: auto; } }
     @media (min-width: 1366px) {
       .modal__wrapper {
         width: 320px;
@@ -749,11 +765,12 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), 2px 0px 4px rgba(69, 79, 126, 0.02); }
     @media (min-width: 768px) {
       .modal__window {
-        width: 320px; } }
+        width: 320px;
+        height: auto; } }
     @media (min-width: 1366px) {
       .modal__window {
         box-shadow: none; } }
@@ -1018,7 +1035,8 @@
 
 @media (min-width: 768px) {
   .price__list {
-    display: table; } }
+    display: table;
+    border-collapse: collapse; } }
 
 .price__card {
   height: 200px;
@@ -1030,7 +1048,9 @@
   @media (min-width: 768px) {
     .price__card {
       display: table-row;
-      height: 68px; } }
+      height: 68px;
+      border-radius: 0;
+      border: none; } }
   @media (min-width: 768px) {
     .price__card:not(:last-of-type)::after {
       content: "";
@@ -1088,7 +1108,10 @@
   .price__card-link {
     display: table-cell;
     text-decoration: none;
-    min-width: 100px; } }
+    min-width: 100px;
+    cursor: default;
+    text-align: center;
+    vertical-align: middle; } }
 
 .price__purchase {
   color: #FFF;
@@ -1107,13 +1130,15 @@
   bottom: 12px;
   background-position: 85% 10px; }
   @media (min-width: 768px) {
+    .price__purchase:hover {
+      background-color: #7E7E82; } }
+  @media (min-width: 768px) {
     .price__purchase {
       display: inline-block;
-      vertical-align: middle;
+      position: static;
       width: 70px;
       height: 24px;
-      top: 16px;
-      right: 2%; } }
+      cursor: pointer; } }
 
 .price__text {
   font-size: 14px;
