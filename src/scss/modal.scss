@@ -13,7 +13,7 @@ $var1: #ffffff;
         display: none;
     }
 
-    &-wrapper {
+    &__wrapper {
         width: 100%;
         margin: 0 auto;
         height: 100%;
@@ -23,16 +23,9 @@ $var1: #ffffff;
             min-height: 1024px;
             max-height: 100%;
         }
-
-        @media (min-width: 1366px) {
-            width: 320px;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
     }
 
-    &-window {
+    &__window {
         box-sizing: border-box;
 
         background-color: $var1;
@@ -40,18 +33,12 @@ $var1: #ffffff;
         flex-direction: column;
         min-height: 100%;
 
-        box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
-            2px 0px 4px rgba(69, 79, 126, 0.02);
-
         @media (min-width: 768px) {
             width: 320px;
             height: 100%;
         }
 
-        @media (min-width: 1366px) {
-            box-shadow: none;
 
-        }
 
     }
 

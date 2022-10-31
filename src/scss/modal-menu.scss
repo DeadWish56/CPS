@@ -3,18 +3,25 @@ $var2: #7E7E82;
 $var3: #41F6D7;
 
 .modal-menu {
-    
+
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+
     &--display {
         display: none;
     }
 
     @media (min-width: 1366px) {
         display: block;
-        position: static;
+        position: absolute;
         width: 320px;
+    }
+
+    &__window {
+        box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+            2px 0px 4px rgba(69, 79, 126, 0.02);
+        
     }
 
     &__logo {
