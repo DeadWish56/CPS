@@ -4,7 +4,7 @@ $var3: #41F6D7;
 
 .modal-menu {
     
-    overflow-y: scroll;
+    overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
     &--display {
