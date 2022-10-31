@@ -759,6 +759,7 @@
     .modal-menu {
       display: block;
       position: absolute;
+      top: 0;
       width: 320px; } }
   .modal-menu__window {
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), 2px 0px 4px rgba(69, 79, 126, 0.02); }
