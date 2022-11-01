@@ -313,7 +313,7 @@
             <p class="price__card-head">Срок</dt>
             <p class="price__card-time">30-120 мин</p>
             <a class="price__card-link" href="#">
-              <span class="price__purchase" span>заказать</span>
+              <span class="submit price__purchase" span>заказать</span>
             </a>
           </li>
           <li class="swiper-slide cards price__card">
@@ -324,7 +324,7 @@
             <p class="price__card-head">Срок</dt>
             <p class="price__card-time">30-120 мин</p>
             <a class="price__card-link" href="#">
-              <span class="price__purchase" span>заказать</span>
+              <span class="submit price__purchase" span>заказать</span>
             </a>
           </li>
           <li class="swiper-slide cards price__card">
@@ -335,7 +335,7 @@
             <p class="price__card-head">Срок</p>
             <p class="price__card-time">30-120 мин</p>
             <a class="price__card-link" href="#">
-              <span class="price__purchase" span>заказать</span>
+              <span class="submit price__purchase" span>заказать</span>
             </a>
           </li>
           <li class="swiper-slide cards price__card">
@@ -346,7 +346,7 @@
             <p class="price__card-head">Срок</p>
             <p class="price__card-time">30-120 мин</p>
             <a class="price__card-link" href="#">
-              <span class="price__purchase" span>заказать</span>
+              <span class="submit price__purchase" span>заказать</span>
             </a>
           </li>
           <li class="swiper-slide cards price__card">
@@ -356,9 +356,9 @@
             <p class="price__card-cost">Бесплатно</p>
             <p class="price__card-head">Срок</p>
             <p class="price__card-time">30 мин</p>
-            <a class="price__card-link" href="#">
-              <span class="price__purchase" span>заказать</span>
-            </a>
+            <p class="price__card-link" href="#">
+              <span class="submit price__purchase" span>заказать</span>
+            </p>
           </li>
         </ul>
         <div class="swiper-pagination"></div>
@@ -472,20 +472,38 @@
   </aside>
   <aside class="moda modal-help">
     <div class="moda__wrapper">
-      <div class="moda__window feedback">
-        <button class="btn btn--circle feedback__btn">
+      <div class="moda__window modal-help__window feedback">
+        <button class="btn btn--circle modal-help__close-btn">
           <span class="btn__icon btn__icon--close"></span>
           <span class="visually-hidden">Закрыть окно обратной связи</span>
-          <h2 class="title-modal">Услуги и сервисы</h2>
         </button>
+        <h2 class="title-modal modal-help__title">Обратная связь</h2>
+        <form class="form modal-help__form" action="https://deadwish56.github.io/CPS/" method="post">
+          <input class="input modal-help__input" type="text" placeholder="Имя" required>
+          <p class="modal-help__description">Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="modal-help__link">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a href="#" class="modal-help__link">политикой конфиденциальности</a>
+          </p>
+          <input type="submit" class="submit modal-help__submit" value="Отправить"></input>
+        </form>
       </div>
-      <div class="moda__window call">
-        <button class="btn btn--circle call__btn" title="Закрыть меню">
+      <div class="moda__window modal-help__window call">
+        <button class="btn btn--circle modal-help__close-btn" title="Закрыть меню">
           <span class="btn__icon btn__icon--close"></span>
           <span class="visually-hidden">Закрыть меню</span>
-          <h2 class="title-modal">Услуги и сервисы</h2>
         </button>
-      </div>
+        <h2 class="title-modal modal-help__title">Заказать звонок</h2>
+        <form class="form modal-help__form" action="https://deadwish56.github.io/CPS/" method="post">
+          <input class="input modal-help__input" type="text" placeholder="Имя" required>
+          <p class="modal-help__description">Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="modal-help__link">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a href="#" class="modal-help__link">политикой конфиденциальности</a>
+          </p>
+          <input type="submit" class="submit modal-help__submit" value="Отправить"></input>
+        </form>
+    </div>
     </div>
   </aside>
 </body>

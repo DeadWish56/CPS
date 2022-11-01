@@ -1,6 +1,51 @@
 .modal-help {
     display: block;
+
     &--display {
         display: block;
+    }
+
+    &__window {
+        padding: 24px 16px 0 16px;
+    }
+
+    &__close-btn {
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        margin-bottom: 16px;
+    }
+
+    &__submit {
+        width: 136px;
+        height: 32px;
+        border: none;
+        box-sizing: border-box;
+        padding-left: 22px;
+        text-align: left;
+        margin-left: auto;
+    }
+
+    &__description {
+        margin: 0 0 18px 0;
+        line-height: 16px;
+        letter-spacing: 0;
+    }
+
+    &__link {
+        color: #FF3E79;
+        text-decoration: none;
     }
 }
