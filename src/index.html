@@ -479,7 +479,10 @@
         </button>
         <h2 class="title-modal modal-help__title">Обратная связь</h2>
         <form class="form modal-help__form" action="https://deadwish56.github.io/CPS/" method="post">
-          <input class="input modal-help__input" type="text" placeholder="Имя" required>
+          <input class="input modal-help__input" type="text" name="user-name" placeholder="Имя" required>
+          <input class="input modal-help__input" type="tel" name="user-tel" placeholder="Телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+          <input class="input modal-help__input" type="email" name="user-email" placeholder="Электронная почта" required>
+          <textarea class="input modal-help__textarea" name="user-message" placeholder="Сообщение"></textarea>
           <p class="modal-help__description">Нажимая “отправить”, вы даете согласие на
             <a href="#" class="modal-help__link">обработку персональных данных</a> и
             соглашаетесь с нашей
@@ -503,7 +506,7 @@
           </p>
           <input type="submit" class="submit modal-help__submit" value="Отправить"></input>
         </form>
-    </div>
+      </div>
     </div>
   </aside>
 </body>
