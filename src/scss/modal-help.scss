@@ -1,5 +1,5 @@
 .modal-help {
-    display: block;
+    display: none;
 
     &--display {
         display: block;
@@ -7,6 +7,21 @@
 
     &__window {
         padding: 24px 16px 0 16px;
+        display: none;
+        margin-left: auto;
+        position: relative;
+        
+        box-sizing: border-box;
+        @media (min-width: 768px) {
+            box-shadow: 
+                0px 0px 52px rgba(14, 24, 80, 0.2),
+                -2px 0px 4px rgba(69, 79, 126, 0.2);
+            border-left: 1px solid #41F6D7;
+        }
+
+        &--display {
+            display: flex;
+        }
     }
 
     &__close-btn {
@@ -19,6 +34,10 @@
         align-items: flex-end;
     }
 
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__input {
         margin-bottom: 16px;
@@ -33,11 +52,10 @@
         width: 136px;
         height: 32px;
         border: none;
-        box-sizing: border-box;
         padding-left: 22px;
         text-align: left;
-        margin-left: 168px;
-        
+        margin-left: 152px;
+        margin-bottom: 75px;
         &:hover {
             background-color: #7E7E82;
         }

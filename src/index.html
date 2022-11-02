@@ -21,13 +21,13 @@
       </a>
       <ul class="help-list header__help-list header__help-list--display--none">
         <li class="help-list__item ">
-          <button class="btn btn--circle">
+          <button class="btn btn--circle btn-modal" data-path="call">
             <span class="btn__icon btn__icon--phone"></span>
             <span class="visually-hidden">Заказать звонок</span>
           </button>
         </li>
         <li class="help-list__item">
-          <button class="btn btn--circle">
+          <button class="btn btn--circle btn-modal" data-path="feedback">
             <span class="btn__icon btn__icon--message"></span>
             <span class="visually-hidden">Чат с поддержкой</span>
           </button>
@@ -433,13 +433,13 @@
         <footer class="modal-menu__footer">
           <ul class="help-list modal-menu__footer-list">
             <li class="help-list__item modal-menu__footer-item">
-              <button class="btn btn--circle modal-menu__footer-btn">
+              <button class="btn btn--circle modal-menu__footer-btn btn-modal" data-path="call">
                 <span class="btn__icon btn__icon--phone"></span>
                 <span class="visually-hidden">Заказать звонок</span>
               </button>
             </li>
             <li class="help-list__item modal-menu__footer-item">
-              <button class="btn btn--circle modal-menu__footer-btn">
+              <button class="btn btn--circle modal-menu__footer-btn btn-modal" data-path="feedback">
                 <span class="btn__icon btn__icon--message"></span>
                 <span class="visually-hidden">Чат с поддержкой</span>
               </button>
@@ -470,28 +470,9 @@
       </div>
     </div>
   </aside>
-  <aside class="moda modal-help">
-    <div class="moda__wrapper">
-      <div class="moda__window modal-help__window feedback">
-        <button class="btn btn--circle modal-help__close-btn">
-          <span class="btn__icon btn__icon--close"></span>
-          <span class="visually-hidden">Закрыть окно обратной связи</span>
-        </button>
-        <h2 class="title-modal modal-help__title">Обратная связь</h2>
-        <form class="form modal-help__form" action="https://deadwish56.github.io/CPS/" method="post">
-          <input class="input modal-help__input" type="text" name="user-name" placeholder="Имя" required>
-          <input class="input modal-help__input" type="tel" name="user-tel" placeholder="Телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
-          <input class="input modal-help__input" type="email" name="user-email" placeholder="Электронная почта" required>
-          <textarea class="input modal-help__textarea" name="user-message" placeholder="Сообщение"></textarea>
-          <p class="modal-help__description">Нажимая “отправить”, вы даете согласие на
-            <a href="#" class="modal-help__link">обработку персональных данных</a> и
-            соглашаетесь с нашей
-            <a href="#" class="modal-help__link">политикой конфиденциальности</a>
-          </p>
-          <input type="submit" class="submit modal-help__submit" value="Отправить"></input>
-        </form>
-      </div>
-      <div class="moda__window modal-help__window call">
+  <aside class="modal modal-help">
+    <div class="modal__wrapper modal-help__overlay">
+      <div class="modal__window modal-help__window" data-target="call">
         <button class="btn btn--circle modal-help__close-btn" title="Закрыть меню">
           <span class="btn__icon btn__icon--close"></span>
           <span class="visually-hidden">Закрыть меню</span>
@@ -504,6 +485,27 @@
             соглашаетесь с нашей
             <a href="#" class="modal-help__link">политикой конфиденциальности</a>
           </p>
+          <input type="submit" class="submit modal-help__submit" value="Отправить"></input>
+        </form>
+      </div>
+      <div class="modal__window modal-help__window" data-target="feedback">
+        <button class="btn btn--circle modal-help__close-btn">
+          <span class="btn__icon btn__icon--close"></span>
+          <span class="visually-hidden">Закрыть окно обратной связи</span>
+        </button>
+        <h2 class="title-modal modal-help__title">Обратная связь</h2>
+        <form class="form modal-help__form" action="https://deadwish56.github.io/CPS/" method="post">
+          <input class="input modal-help__input" type="text" name="user-name" placeholder="Имя" required>
+          <input class="input modal-help__input" type="tel" name="user-tel" placeholder="Телефон" required>
+          <input class="input modal-help__input" type="email" name="user-email" placeholder="Электронная почта"
+            required>
+          <textarea class="input modal-help__textarea" name="user-message" placeholder="Сообщение"></textarea>
+          <p class="modal-help__description">Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="modal-help__link">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a href="#" class="modal-help__link">политикой конфиденциальности</a>
+          </p>
+
           <input type="submit" class="submit modal-help__submit" value="Отправить"></input>
         </form>
       </div>
