@@ -19,9 +19,9 @@ $var3: #41F6D7;
         box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
             2px 0px 4px rgba(69, 79, 126, 0.02);
 
-            @media (min-width: 1366px) {
-                box-shadow: none;
-            }
+        @media (min-width: 1366px) {
+            box-shadow: none;
+        }
     }
 
     &__logo {
@@ -35,11 +35,10 @@ $var3: #41F6D7;
     }
 
     &__btn {
-        &--display {
-            @media (min-width: 1366px) {
-                display: none;
-            }
+        @media (min-width: 1366px) {
+            display: none;
         }
+
     }
 
     &__btn--right {

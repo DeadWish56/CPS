@@ -1,7 +1,3 @@
-
-
-
-
 let buttons = document.querySelectorAll('.showmore-btn');
 let buttonsIcon = document.querySelectorAll('.show-more');
 let sectionsHeight = document.querySelectorAll('.swiper');
