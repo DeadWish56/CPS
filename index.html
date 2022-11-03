@@ -10,7 +10,7 @@
 <link href="style.css" rel="stylesheet"></head>
 
 <body class="page__body">
-  <header class="header header--display--none">
+  <header class="header page__header header--display--none">
     <div class="header__inner">
       <button class="btn btn--circle" title="Открыть меню">
         <span class="btn__icon btn__icon--burger"></span>
@@ -76,13 +76,13 @@
       <nav class="nav menu__nav">
         <ul class="nav__list menu__nav-list">
           <li class="nav__item menu__nav-item">
-            <a class="nav__link menu__nav-link menu__nav-link--active">Ремонтируемые бренды</a>
+            <a href="#brands" class="nav__link menu__nav-link menu__nav-link--active">Ремонтируемые бренды</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link menu__nav-link">Дополнительные услуги</a>
+            <a href="#repair" class="nav__link menu__nav-link">Ремонтируемые устройства</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link menu__nav-link">Цены на услуги</a>
+            <a href="#price" class="nav__link menu__nav-link">Цены на услуги</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link menu__nav-link">Адреса сервисных центров</a>
@@ -137,7 +137,7 @@
         </div>
       </div>
     </section>
-    <section class="section brands">
+    <section class="section brands" id="brands">
       <h2 class="title">Ремонт техники различных брендов</h2>
       <div class="swiper" data-mobile="false">
         <ul class="swiper-wrapper">
@@ -215,7 +215,7 @@
         <span class="btn__text">Показать все</span>
       </button>
     </section>
-    <section class="section repair">
+    <section class="section repair" id="repair">
       <h2 class="title">Ремонт различных видов техники</h2>
       <div class="swiper repair__inner" data-mobile="false">
         <ul class="swiper-wrapper repair__list">
@@ -293,7 +293,7 @@
         <span class="btn__text">Показать все</span>
       </button>
     </section>
-    <section class="section price">
+    <section class="section price" id="price">
       <h2 class="title">Ремонт техники различных брендов</h2>
       <div class="swiper price__inner" data-mobile="false">
         <ul class="swiper-wrapper price__list">
@@ -388,7 +388,7 @@
       <div class="modal__window modal-menu__window">
         <header class="header">
           <div class="header__inner">
-            <button class="btn btn--circle modal-menu__btn modal-menu__btn--display" title="Закрыть меню">
+            <button class="btn btn--circle modal-menu__btn" title="Закрыть меню">
               <span class="btn__icon btn__icon--close"></span>
               <span class="visually-hidden">Закрыть меню</span>
             </button>
@@ -404,10 +404,10 @@
         <nav class="nav">
           <ul class="nav__list modal-menu__nav-list">
             <li class="nav__item modal-menu__nav-item">
-              <a class="nav__link modal-menu__nav-link modal-menu__nav-link--active">Ремонт техники</a>
+              <a href="#" class="nav__link modal-menu__nav-link modal-menu__nav-link">Ремонт техники</a>
             </li>
             <li class="nav__item modal-menu__nav-item">
-              <a href="#" class="nav__link modal-menu__nav-link">Услуги и сервисы</a>
+              <a class="nav__link modal-menu__nav-link--active">Услуги и сервисы</a>
             </li>
             <li class="nav__item modal-menu__nav-item">
               <a href="#" class="nav__link modal-menu__nav-link">Корпоративным клиентам</a>
@@ -471,6 +471,10 @@
   </aside>
   <aside class="modal modal-help">
     <div class="modal__wrapper modal-help__overlay">
+      <button class="btn btn--circle modal-help__close-btn modal-help__close-btn--display">
+        <span class="btn__icon btn__icon--close"></span>
+        <span class="visually-hidden">Закрыть окно обратной связи</span>
+      </button>
       <div class="modal__window modal-help__window" data-target="call">
         <button class="btn btn--circle modal-help__close-btn" title="Закрыть меню">
           <span class="btn__icon btn__icon--close"></span>
@@ -503,7 +507,6 @@
             соглашаетесь с нашей
             <a href="#" class="modal-help__link">политикой конфиденциальности</a>
           </p>
-
           <input type="submit" class="submit modal-help__submit" value="Отправить">
         </form>
       </div>
