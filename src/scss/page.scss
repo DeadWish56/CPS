@@ -8,16 +8,29 @@ $var2: #f8f8f8;
     letter-spacing: 0.2px;
     color: $var1;
     letter-spacing: -0.2px;
+    scroll-behavior: smooth;
 
     &__body {
         min-width: 320px;
-        margin: 0 auto;
         padding: 0;
+        margin: 0;
         position: relative;
 
         &--overflow {
-            overflow: hidden;
-            padding-right: 17px;
+            overflow: hidden;   
+        }
+        @media (min-width: 1440px) {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+    }
+
+    &__header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        @media (min-width: 1366px) {
+            position: static;
         }
     }
 

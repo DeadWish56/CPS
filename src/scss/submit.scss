@@ -10,4 +10,9 @@
     background-image: url("../img/icon-goside.svg");
     background-repeat: no-repeat;    
     background-position: 85% 10px;
+    transition: background-color 500ms ease;
+
+    &:hover {
+        background-color: #7E7E82;
+    }
 }
