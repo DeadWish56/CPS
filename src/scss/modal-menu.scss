@@ -1,6 +1,6 @@
-$var1: #1B1C21;
-$var2: #7E7E82;
-$var3: #41F6D7;
+$color-text: #1B1C21;
+$color-gray: #7E7E82;
+$color-decoration: #41F6D7;
 
 .modal-menu {
 
@@ -24,6 +24,7 @@ $var3: #41F6D7;
 
         @media (min-width: 1366px) {
             box-shadow: none;
+
         }
     }
 
@@ -66,14 +67,18 @@ $var3: #41F6D7;
     }
 
     &__nav-link {
-        display: flex;
-        align-items: center;
+        display: block;
         height: 32px;
         font-weight: 500;
-        color: $var1;
+        color: $color-text;
 
         &--active {
-            color: $var2;
+            color: $color-gray;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+
 
             &:hover {
                 opacity: 1;
@@ -83,9 +88,10 @@ $var3: #41F6D7;
                 content: "";
                 height: 32px;
                 position: absolute;
-                border-left: 8px solid $var3;
+                border-left: 8px solid $color-decoration;
                 border-radius: 4px;
                 left: -4px;
+                vertical-align: middle;
             }
         }
     }
@@ -131,7 +137,7 @@ $var3: #41F6D7;
     }
 
     &__lang-link {
-        color: $var1;
+        color: $color-text;
         text-decoration: none;
         font-weight: 500;
         transform: opacity 500ms;
@@ -142,7 +148,7 @@ $var3: #41F6D7;
         }
 
         &--active {
-            color: $var2;
+            color: $color-gray;
 
             &:hover {
                 opacity: 1;

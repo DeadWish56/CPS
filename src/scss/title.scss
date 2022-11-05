@@ -1,14 +1,11 @@
-$var1: #7E7E82;
-$var3: #F8F8F8;
-
 .title {
     text-transform: uppercase;
-    color: $var1;
+    color: $color-gray;
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
     padding: 16px;
-    background: linear-gradient(270deg, #FFFFFF 0%, $var3 98.61%);
+    background: linear-gradient(270deg, $color-white 0%, $color-bg-light 98.61%);
 
     @media (min-width: 768px) {
         padding-left: 24px;

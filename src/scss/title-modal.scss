@@ -1,11 +1,8 @@
-$var1: #1b1c21;
-$var2: #41F6D7;
-
 .title-modal {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: $var1;
+    color: $color-text;
     text-transform: none;
     letter-spacing: -0.6px;
     margin: 0;
@@ -13,7 +10,7 @@ $var2: #41F6D7;
     &::before {
         content: "";
         height: 40px;
-        border-left: 8px solid $var2;
+        border-left: 8px solid $color-decoration;
         border-radius: 6px;
         left: -4px;
         position: absolute;

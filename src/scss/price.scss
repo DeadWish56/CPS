@@ -1,4 +1,4 @@
-$color-alternate: #7E7E82;
+$color-gray: #7E7E82;
 
 .price {
     &__inner {
@@ -46,7 +46,7 @@ $color-alternate: #7E7E82;
                 width: 97%;
                 bottom: 1px;
                 left: 13px;
-                border-bottom: 1px solid #EAEAEA;
+                border-bottom: 1px solid $border-color;
             }
         }
 
@@ -60,7 +60,7 @@ $color-alternate: #7E7E82;
 
     &__card-head {
         margin: 0px 0px 4px 0;
-        color: $color-alternate;
+        color: $color-gray;
 
         @media (min-width: 768px) {
             display: none;
@@ -129,7 +129,7 @@ $color-alternate: #7E7E82;
 
         &:hover {
             @media (min-width: 768px) {
-                background-color: $color-alternate;
+                background-color: $color-gray;
             }
         }
 
@@ -182,9 +182,9 @@ $color-alternate: #7E7E82;
 
         @media (min-width: 768px) {
             display: table-row;
-            background-color: #f8f8f8;
+            background-color: $color-bg-light;
             height: 40px;
-            color: #7E7E82;
+            color: $color-gray;
         }
     }
 }

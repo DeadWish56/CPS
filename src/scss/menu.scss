@@ -1,7 +1,4 @@
-$var1: #7E7E82;
-$var2: #B8FFEC;
-$var3: #FFFFFF;
-$var4: #1B1C21;
+$color-text: #1B1C21;
 
 .menu {
     &__inner {
@@ -39,7 +36,7 @@ $var4: #1B1C21;
             }
         }
 
-        @media (min-width: 1120px) {
+        @media (min-width: 1366px) {
             margin-left: auto;
             padding: 0;
         }
@@ -68,9 +65,9 @@ $var4: #1B1C21;
             right: 0;
             width: 25px;
             height: 40px;
-            background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+            background: linear-gradient(270deg, $color-bg-light 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 
-            @media (min-width: 1120px) {
+            @media (min-width: 1366px) {
                 display: none;
             }
         }
@@ -80,7 +77,7 @@ $var4: #1B1C21;
             margin-bottom: 24px;
         }
 
-        @media (min-width: 1120px) {
+        @media (min-width: 1366px) {
             flex-wrap: wrap;
             margin-left: 32px;
             margin-bottom: 5px;
@@ -89,21 +86,21 @@ $var4: #1B1C21;
     }
 
     &__help-item:not(:last-of-type) {
-        @media (min-width: 1120px) {
+        @media (min-width: 1366px) {
             margin: 0 16px 0 0;
             padding: 0;
         }
     }
 
     &__btn {
-        @media (min-width: 1120px) {
+        @media (min-width: 1366px) {
             display: flex;
             align-items: center;
             font-family: 'TT Lakes';
             font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.2px;
-            color: $var4;
+            color: $color-text;
             font-weight: 500;
             margin: 0;
             padding: 0;
@@ -113,7 +110,7 @@ $var4: #1B1C21;
     }
 
     &__btn-text {
-        @media (min-width: 1120px) {
+        @media (min-width: 1366px) {
             margin: 0 8px 0 0;
             padding: 0;
         }
@@ -124,15 +121,15 @@ $var4: #1B1C21;
         white-space: nowrap;
         border: none;
         padding: 8px 16px 8px 16px;
-        color: $var1;
+        color: $color-gray;
         border: 2px solid transparent;
 
 
         &:hover {
-            border: 2px solid $var2;
+            border: 2px solid $border-menu;
             border-radius: 6px;
-            background-color: $var3;
-            
+            background-color: $color-white;
+
 
             &:hover {
                 opacity: 1;

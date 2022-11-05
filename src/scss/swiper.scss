@@ -1,10 +1,3 @@
-$var1: #B5B6BC;
-$var2: #DDDDDD;
-$var3: #F8F8F8;
-$var4: #D9FFF5;
-$var5: #FFFFFF;
-$var6: #EAEAEA;
-
 .swiper {
 	height: 120px;
 	padding: 5px 0px 5px 16px;
@@ -34,19 +27,20 @@ $var6: #EAEAEA;
 		right: 0;
 		width: 26px;
 		height: 100%;
-		background: linear-gradient(270deg, $var3 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+		background: linear-gradient(270deg, $color-bg-light 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 		z-index: 2;
 
 		@media (min-width: 768px) {
 			display: none;
 		}
+
 		@media (min-width: 1120px) {
-		display: none;
+			display: none;
 		}
 	}
 }
 
-.swiper-wrapper  {
+.swiper-wrapper {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -63,8 +57,8 @@ $var6: #EAEAEA;
 }
 
 .swiper-slide {
-	background: $var5;
-	border: 1px solid $var6;
+	background: $color-white;
+	border: 1px solid $border-color;
 	border-radius: 6px;
 	height: 72px;
 	width: 240px;
@@ -87,11 +81,11 @@ $var6: #EAEAEA;
 }
 
 .swiper-pagination-bullet-active {
-	background-color: $var1;
+	background-color: $color-text-placeholder;
 }
 
 .swiper-pagination-bullet {
-	background-color: $var2;
+	background-color: $pagination-color;
 	width: 12px;
 	height: 12px;
 }

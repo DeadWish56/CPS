@@ -3,7 +3,7 @@
         font-size: 14px;
         line-height: 16px;
         text-align: center;
-        color: #7E7E82;
+        color: $color-gray;
         mix-blend-mode: normal;
         opacity: 0.72;
         margin: 0;
@@ -26,11 +26,11 @@
 
     &__link {
         text-decoration: none;
-        color: #7E7E82;
+        color: $color-gray;
         transition: color 500ms ease;
 
         &:hover {
-            color: red;
+            color: $color-link;
         }
     }
 }

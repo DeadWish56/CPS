@@ -1,12 +1,9 @@
-$var1: #1B1C21;
-$var2: #f8f8f8;
-
 .page {
     font-family: "TT lakes";
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: $var1;
+    color: $color-text;
     letter-spacing: -0.2px;
     scroll-behavior: smooth;
 
@@ -17,10 +14,11 @@ $var2: #f8f8f8;
         position: relative;
 
         &--overflow {
-            overflow: hidden;   
+            overflow: hidden;
         }
+
         @media (min-width: 1440px) {
-            max-width: 1440px;
+            max-width: 1600px;
             margin: 0 auto;
         }
     }
@@ -29,6 +27,7 @@ $var2: #f8f8f8;
         position: sticky;
         top: 0;
         z-index: 3;
+
         @media (min-width: 1366px) {
             position: static;
         }
@@ -48,7 +47,7 @@ $var2: #f8f8f8;
     }
 
     &__main {
-        background-color: $var2;
+        background-color: $color-bg-light;
 
         @media (min-width: 1366px) {
             margin-left: 320px;

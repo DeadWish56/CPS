@@ -1,8 +1,7 @@
-
 .input {
-    border: 1px solid #EAEAEA;
+    border: 1px solid $border-color;
     border-radius: 8px;
-    background: #FFFFFF;
+    background: $color-white;
     width: 288px;
     height: 48px;
     vertical-align: middle;
@@ -11,27 +10,27 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: #1B1C21;
+    color: $color-text;
     resize: none;
 
     &::-webkit-input-placeholder {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        color: #B5B6BC;
+        color: $color-text-placeholder;
     }
 
     &::-moz-placeholder {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        color: #B5B6BC;
+        color: $color-text-placeholder;
     }
 
     &:-ms-input-placeholder {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        color: #B5B6BC;
+        color: $color-text-placeholder;
     }
 }

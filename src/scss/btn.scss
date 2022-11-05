@@ -1,6 +1,3 @@
-$text-color: #1B1C21;
-$btn-color: #FF3E79;
-
 .btn {
     transition: opacity 500ms,
         transform 500ms;
@@ -9,7 +6,7 @@ $btn-color: #FF3E79;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: $text-color;
+    color: $color-text;
     font-weight: 500;
     border: none;
     padding: 0;
@@ -28,37 +25,37 @@ $btn-color: #FF3E79;
         border-radius: 50%;
 
         &--burger {
-            background: $btn-color url("../img/icon-burger.svg") no-repeat 50%;
+            background: $color-link url("../img/icon-burger.svg") no-repeat 50%;
         }
 
         &--close {
-            background: $btn-color url("../img/icon-close.svg") no-repeat 50%;
+            background: $color-link url("../img/icon-close.svg") no-repeat 50%;
         }
 
         &--search {
-            background: $btn-color url("../img/icon-search.svg") no-repeat 50%;
+            background: $color-link url("../img/icon-search.svg") no-repeat 50%;
         }
 
         &--phone {
-            background: $btn-color url("../img/icon-phohe.svg") no-repeat 50%;
+            background: $color-link url("../img/icon-phohe.svg") no-repeat 50%;
         }
 
         &--message {
-            background: $btn-color url("../img/icon-message.svg") no-repeat 50%;
+            background: $color-link url("../img/icon-message.svg") no-repeat 50%;
 
         }
 
         &--profille {
-            background: $btn-color url("../img/icon-profille.svg") no-repeat 50%;
+            background: $color-link url("../img/icon-profille.svg") no-repeat 50%;
         }
 
         &--repair {
-            background: $btn-color url("../img/icon-repair.svg") no-repeat 50%;
+            background: $color-link url("../img/icon-repair.svg") no-repeat 50%;
 
         }
 
         &--checkstatus {
-            background: $btn-color url("../img/icon-checkstatus.svg") no-repeat 50%;
+            background: $color-link url("../img/icon-checkstatus.svg") no-repeat 50%;
 
         }
     }
