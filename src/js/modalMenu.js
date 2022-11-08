@@ -5,30 +5,28 @@ const modalMenu = document.querySelector('.modal-menu');
 const menuWindow = document.querySelector('.modal-menu__window')
 const overlay = document.querySelector('.modal__wrapper');
 
-
+const clickModalMenu = function () {
+    modalMenu.classList.toggle('modal-menu--display')
+    menuWindow.classList.toggle('modal-menu__window--display')
+    body.classList.toggle('page__body--overflow')
+}
 
 openButton.onclick = function () {
-    modalMenu.classList.add('modal-menu--display')
-    menuWindow.classList.add('modal-menu__window--display')
-    body.classList.add('page__body--overflow')
+    clickModalMenu()
 }
 
 closeButton.onclick = function () {
-    modalMenu.classList.toggle('modal-menu--display')
-    body.classList.remove('page__body--overflow')
-    menuWindow.classList.remove('modal-menu__window--display')
+    clickModalMenu()
 }
 
 overlay.addEventListener('click', function (evt) {
     if (evt.target == this) {
-        modalMenu.classList.toggle('modal-menu--display')
-        body.classList.remove('page__body--overflow')
-        menuWindow.classList.remove('modal-menu__window--display')
+        clickModalMenu()
     }
 })
 
 body.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
-        modalMenu.classList.add('modal-menu--display')
+        clickModalMenu()
     }
 })
