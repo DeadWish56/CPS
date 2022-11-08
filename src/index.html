@@ -21,14 +21,14 @@
       </a>
       <ul class="help-list header__help-list header__help-list--display--none">
         <li class="help-list__item ">
-          <button class="btn btn--circle btn-modal" data-path="call">
-            <span class="btn__icon btn__icon--phone"></span>
+          <button class="btn btn--circle btn-modal">
+            <span class="btn__icon btn__icon--phone" data-path="call"></span>
             <span class="visually-hidden">Заказать звонок</span>
           </button>
         </li>
         <li class="help-list__item">
-          <button class="btn btn--circle btn-modal" data-path="feedback">
-            <span class="btn__icon btn__icon--message"></span>
+          <button class="btn btn--circle btn-modal">
+            <span class="btn__icon btn__icon--message" data-path="feedback"></span>
             <span class="visually-hidden">Чат с поддержкой</span>
           </button>
         </li>
@@ -433,14 +433,14 @@
         <footer class="modal-menu__footer">
           <ul class="help-list modal-menu__footer-list">
             <li class="help-list__item modal-menu__footer-item">
-              <button class="btn btn--circle modal-menu__footer-btn btn-modal" data-path="call">
-                <span class="btn__icon btn__icon--phone"></span>
+              <button class="btn btn--circle modal-menu__footer-btn btn-modal">
+                <span class="btn__icon btn__icon--phone" data-path="call"></span>
                 <span class="visually-hidden">Заказать звонок</span>
               </button>
             </li>
             <li class="help-list__item modal-menu__footer-item">
-              <button class="btn btn--circle modal-menu__footer-btn btn-modal" data-path="feedback">
-                <span class="btn__icon btn__icon--message"></span>
+              <button class="btn btn--circle modal-menu__footer-btn btn-modal">
+                <span class="btn__icon btn__icon--message" data-path="feedback"></span>
                 <span class="visually-hidden">Чат с поддержкой</span>
               </button>
             </li>
@@ -471,14 +471,14 @@
     </div>
   </aside>
   <aside class="modal modal-help">
-    <div class="modal__wrapper modal-help__overlay">
+    <div class="modal__wrapper modal-help__overlay" data-name="overlay">
       <button class="btn btn--circle modal-help__close-btn modal-help__close-btn--display">
-        <span class="btn__icon btn__icon--close"></span>
+        <span class="btn__icon btn__icon--close" data-name="close"></span>
         <span class="visually-hidden">Закрыть окно обратной связи</span>
       </button>
       <div class="modal__window modal-help__window" data-target="call">
         <button class="btn btn--circle modal-help__close-btn" title="Закрыть меню">
-          <span class="btn__icon btn__icon--close"></span>
+          <span class="btn__icon btn__icon--close" data-name="close"></span>
           <span class="visually-hidden">Закрыть меню</span>
         </button>
         <h2 class="title-modal modal-help__title">Заказать звонок</h2>
@@ -494,7 +494,7 @@
       </div>
       <div class="modal__window modal-help__window" data-target="feedback">
         <button class="btn btn--circle modal-help__close-btn">
-          <span class="btn__icon btn__icon--close"></span>
+          <span class="btn__icon btn__icon--close" data-name="close"></span>
           <span class="visually-hidden">Закрыть окно обратной связи</span>
         </button>
         <h2 class="title-modal modal-help__title">Обратная связь</h2>

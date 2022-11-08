@@ -1,16 +1,18 @@
 .modal-help {
-    display: none;
+    visibility: hidden;
 
     &--display {
-        display: block;
+        visibility: visible;
     }
 
     &__window {
         padding: 16px 16px 0 16px;
-        display: none;
+        visibility: hidden;
         margin-left: auto;
         position: absolute;
         box-sizing: border-box;
+        transform: translateX(440px);
+        transition: all 1s ease;
 
         @media (min-width: 768px) {
             box-shadow:
@@ -24,7 +26,9 @@
         }
 
         &--display {
+            visibility: visible;
             display: flex;
+            transform: translateX(0px);
         }
     }
 
