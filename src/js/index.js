@@ -5,13 +5,3 @@ import './helpmodal'
 import './swiper'
 
 import '../scss/style.scss';
-
-
-
-
-
-
-
-
-
-console.log('Works!');

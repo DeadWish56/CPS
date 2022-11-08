@@ -3,19 +3,32 @@ $color-gray: #7E7E82;
 $color-decoration: #41F6D7;
 
 .modal-menu {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease;
 
     &--display {
-        display: none;
+        visibility: visible;
+        opacity: 1;
     }
 
     @media (min-width: 1366px) {
-        display: block;
+        visibility: visible;
+        opacity: 1;
         position: absolute;
         top: 0;
         width: 320px;
     }
 
     &__window {
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: all 1s ease;
+
+        &--display {
+            visibility: visible;
+            transform: translateX(0);
+        }
 
         @media (min-width: 768px) {
             box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
@@ -23,7 +36,9 @@ $color-decoration: #41F6D7;
         }
 
         @media (min-width: 1366px) {
+            visibility: visible;
             box-shadow: none;
+            transform: translateX(0);
 
         }
     }

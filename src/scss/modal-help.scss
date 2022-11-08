@@ -1,8 +1,11 @@
 .modal-help {
     visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease;
 
     &--display {
         visibility: visible;
+        opacity: 1;
     }
 
     &__window {
