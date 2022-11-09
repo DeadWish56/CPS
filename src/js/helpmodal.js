@@ -11,9 +11,9 @@ const closeModalHelp = function () {
     for (let i = 0; i < modalsWindows.length; i++) {
         let modalWindow = modalsWindows[i];
 
-            modalWindow.classList.remove('modal-help__window--display')
-            modalHelp.classList.remove('modal-help--display')
-            body.classList.remove('page__body--overflow')
+        body.classList.remove('page__body--overflow')
+        modalWindow.classList.remove('modal-help__window--display')
+        modalHelp.classList.remove('modal-help--display')
     }
 }
 
