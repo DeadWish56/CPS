@@ -1,37 +1,25 @@
+@charset "UTF-8";
 @font-face {
-    font-family: 'TT Lakes';
-    src: url(./fonts/TTLakes-Bold.eot);
-    src: local('../fonts/TT Lakes Bold'), local('TTLakes-Bold'),
-        url(./fonts/TTLakes-Bold.eot?#iefix) format('embedded-opentype'),
-        url(./fonts/TTLakes-Bold.woff) format('woff'),
-        url(./fonts/TTLakes-Bold.ttf) format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
+  font-family: 'TT Lakes';
+  src: url(./fonts/TTLakes-Bold.eot);
+  src: local("☺"), url(./fonts/TTLakes-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal; }
 
 @font-face {
-    font-family: 'TT Lakes';
-    src: url(./fonts/TTLakes-Medium.eot);
-    src: local('../fonts/TT Lakes Medium'), local('TTLakes-Medium'),
-        url(./fonts/TTLakes-Medium.eot?#iefix) format('embedded-opentype'),
-        url(./fonts/TTLakes-Medium.woff) format('woff'),
-        url(./fonts/TTLakes-Medium.ttf) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
+  font-family: 'TT Lakes';
+  src: url(./fonts/TTLakes-Regular.eot);
+  src: local("☺"), url(./fonts/TTLakes-Regular.woff) format("woff"), url(./fonts/TTLakes-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-    font-family: 'TT Lakes';
-    src: url(./fonts/TTLakes-Regular.eot);
-    src: local('../fonts/TT Lakes Regular'), local('TTLakes-Regular'),
-        url(./fonts/TTLakes-Regular.eot?#iefix) format('embedded-opentype'),
-        url(./fonts/TTLakes-Regular.woff) format('woff'),
-        url(./fonts/TTLakes-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+  font-family: 'TT Lakes';
+  src: url(./fonts/TTLakes-Medium.eot);
+  src: local("☺"), url(./fonts/TTLakes-Medium.woff) format("woff"), url(./fonts/TTLakes-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
 /**
  * Swiper 8.4.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1323,6 +1311,9 @@
   transition: color 500ms ease; }
   .footer__link:hover {
     color: #FF3E79; }
+
+.height--open {
+  height: auto; }
 
 
 /*# sourceMappingURL=style.css.map*/

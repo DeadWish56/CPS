@@ -101,7 +101,7 @@
         <h2 class="visually-hidden">О нас</h2>
         <div class="about__content">
           <div class="about__content-inner">
-            <p class="about__content-text">
+            <p class="about__content-text height">
               Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
               отремонтировать
               свой ноутбук Dell с официальной гарантией производителя.
@@ -123,9 +123,9 @@
               постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
               нас родным и близким
             </p>
-            <button class="btn about__btn">
+            <button class="btn showmore-btn about__btn">
               <span class="btn__expand btn__expand--arrows"></span>
-              <span class="about__btn-text">Читать далее</span>
+              <span class="btn__text about__btn-text">Читать далее</span>
             </button>
           </div>
           <picture class="about__img">
@@ -139,7 +139,7 @@
     </section>
     <section class="section brands" id="brands">
       <h2 class="title">Ремонт техники различных брендов</h2>
-      <div class="swiper" data-mobile="false">
+      <div class="swiper height" data-mobile="false">
         <ul class="swiper-wrapper">
           <li class="swiper-slide cards">
             <a href="#" class="cards__link">
@@ -210,14 +210,14 @@
         </ul>
         <div class="swiper-pagination"></div>
       </div>
-      <button class="btn showmore-btn" data-hidden="true">
-        <span class="btn__expand show-more btn__expand--arrows"></span>
+      <button class="btn showmore-btn">
+        <span class="btn__expand btn__expand--arrows"></span>
         <span class="btn__text">Показать все</span>
       </button>
     </section>
     <section class="section repair" id="repair">
       <h2 class="title">Ремонт различных видов техники</h2>
-      <div class="swiper repair__inner" data-mobile="false">
+      <div class="swiper height repair__inner" data-mobile="false">
         <ul class="swiper-wrapper repair__list">
           <li class="swiper-slide cards repair__card">
             <a href="#" class="cards__link">
@@ -288,14 +288,14 @@
         </ul>
         <div class="swiper-pagination"></div>
       </div>
-      <button class="btn showmore-btn" data-hidden="true">
-        <span class="btn__expand show-more btn__expand--arrows"></span>
+      <button class="btn showmore-btn">
+        <span class="btn__expand btn__expand--arrows"></span>
         <span class="btn__text">Показать все</span>
       </button>
     </section>
     <section class="section price" id="price">
       <h2 class="title">Ремонт техники различных брендов</h2>
-      <div class="swiper price__inner" data-mobile="false">
+      <div class="swiper height price__inner" data-mobile="false">
         <ul class="swiper-wrapper price__list">
           
           <li class="price__table-header">
@@ -484,7 +484,7 @@
         </button>
         <h2 class="title-modal modal-help__title">Заказать звонок</h2>
         <form class="form modal-help__form" action="https://deadwish56.github.io/CPS/" method="post">
-          <input class="input modal-help__input" type="text" placeholder="Имя" required>
+          <input class="input modal-help__input" type="text" name="user-name" placeholder="Имя" required>
           <p class="modal-help__description">Нажимая “отправить”, вы даете согласие на
             <a href="#" class="modal-help__link">обработку персональных данных</a> и
             соглашаетесь с нашей
