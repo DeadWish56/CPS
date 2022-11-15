@@ -1,7 +1,7 @@
 import { body } from './helpmodal';
 const openButton = document.querySelector('.btn__icon--burger');
 const closeButton = document.querySelector('.btn__icon--close');
-const modalMenu = document.querySelector('.modal-menu');
+export const modalMenu = document.querySelector('.modal-menu');
 const menuWindow = document.querySelector('.modal-menu__window')
 const overlay = document.querySelector('.modal__wrapper');
 

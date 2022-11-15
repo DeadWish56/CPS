@@ -1,3 +1,4 @@
+import { modalMenu } from './modalMenu';
 const modalHelp = document.querySelector('.modal-help')
 const modalsWindows = document.querySelectorAll('.modal-help__window')
 let inputsName = document.getElementsByName('user-name');
@@ -18,7 +19,10 @@ const closeModalHelp = function () {
     for (let i = 0; i < modalsWindows.length; i++) {
         let modalWindow = modalsWindows[i];
 
-        body.classList.remove('page__body--overflow')
+        if (!modalMenu.classList.contains('modal-menu--display')) {
+            body.classList.remove('page__body--overflow')
+        }
+
         modalWindow.classList.remove('modal-help__window--display')
         modalHelp.classList.remove('modal-help--display')
     }
@@ -45,5 +49,9 @@ document.addEventListener('click', function (evt) {
         }
     }
 })
-
+body.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+        closeModalHelp()
+    }
+})
 
