@@ -3,6 +3,7 @@ let buttonsIcon = document.querySelectorAll('.btn__expand');
 let sectionsHeight = document.querySelectorAll('.height');
 let buttonsText = document.querySelectorAll('.btn__text');
 
+
 for (let i = 0; i < buttons.length; i++) {
   let button = buttons[i];
   let buttonIcon = buttonsIcon[i];
@@ -15,12 +16,11 @@ for (let i = 0; i < buttons.length; i++) {
 
     if (buttonIcon.classList.contains('btn__expand--rotate')) {
       buttonText.textContent = 'Скрыть';
+    } else if (buttonText.classList.contains('about__btn-text')) {
+      buttonText.textContent = 'Читать далее';
     } else {
-      if (buttonText.classList.contains('about__btn-text')) {
-        buttonText.textContent = 'Читать далее';
-      } else {
-        buttonText.textContent = 'Показать все';
-      }
+      buttonText.textContent = 'Показать все';
     }
+
   }
 }

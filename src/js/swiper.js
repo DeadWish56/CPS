@@ -22,10 +22,7 @@ for (let i = 0; i < sliders.length; i++) {
   
     if (window.innerWidth >= 768 && slider.dataset.mobile == 'true') {
       slider.dataset.mobile = 'false';
-  
-      if (slider.classList.contains('swiper-initialized')) {
         mySlider.destroy();
-      }
     }
   }
   
