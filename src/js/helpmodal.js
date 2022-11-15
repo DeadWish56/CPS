@@ -1,10 +1,17 @@
 const modalHelp = document.querySelector('.modal-help')
 const modalsWindows = document.querySelectorAll('.modal-help__window')
+let inputsName = document.getElementsByName('user-name');
 export const body = document.querySelector('.page__body');
 
 const openModalHelp = function () {
     body.classList.add('page__body--overflow')
     modalHelp.classList.add('modal-help--display')
+    for (let i = 0; i < inputsName.length; i++) {
+        let input = inputsName[i];
+        setTimeout(() => {
+            input.focus();
+        }, 500)
+    }
 }
 
 const closeModalHelp = function () {
@@ -38,3 +45,5 @@ document.addEventListener('click', function (evt) {
         }
     }
 })
+
+
