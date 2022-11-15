@@ -1,6 +1,6 @@
 let buttons = document.querySelectorAll('.showmore-btn');
-let buttonsIcon = document.querySelectorAll('.show-more');
-let sectionsHeight = document.querySelectorAll('.swiper');
+let buttonsIcon = document.querySelectorAll('.btn__expand');
+let sectionsHeight = document.querySelectorAll('.height');
 let buttonsText = document.querySelectorAll('.btn__text');
 
 for (let i = 0; i < buttons.length; i++) {
@@ -10,13 +10,17 @@ for (let i = 0; i < buttons.length; i++) {
   let buttonText = buttonsText[i];
 
   button.onclick = function () {
-    sectionHeight.classList.toggle('swiper--height');
+    sectionHeight.classList.toggle('height--open');
     buttonIcon.classList.toggle('btn__expand--rotate');
 
     if (buttonIcon.classList.contains('btn__expand--rotate')) {
       buttonText.textContent = 'Скрыть';
     } else {
-      buttonText.textContent = 'Показать все';
+      if (buttonText.classList.contains('about__btn-text')) {
+        buttonText.textContent = 'Читать далее';
+      } else {
+        buttonText.textContent = 'Показать все';
+      }
     }
   }
 }
