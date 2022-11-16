@@ -58,91 +58,6 @@ $color-gray: #7E7E82;
         }
     }
 
-    &__card-head {
-        margin: 0px 0px 4px 0;
-        color: $color-gray;
-
-        @media (min-width: 768px) {
-            display: none;
-        }
-    }
-
-    &__card-description {
-
-        @media (min-width: 768px) {
-            display: table-cell;
-            vertical-align: middle;
-            min-width: 320px;
-            padding-left: 16px;
-        }
-
-        &:not(:first-of-type) {
-            margin-top: 0px;
-        }
-    }
-
-    &__card-cost {
-        margin: 0 0 16px 0;
-
-        @media (min-width: 768px) {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 0;
-            min-width: 80px;
-        }
-
-        @media (min-width: 1120px) {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 0;
-            min-width: 140px;
-        }
-    }
-
-    &__card-time {
-        margin: 0px;
-
-        @media (min-width: 768px) {
-            display: table-cell;
-            vertical-align: middle;
-            min-width: 100px;
-        }
-    }
-
-    &__card-link {
-        @media (min-width: 768px) {
-            display: table-cell;
-            text-decoration: none;
-            min-width: 100px;
-            cursor: default;
-            text-align: center;
-            vertical-align: middle;
-        }
-    }
-
-    &__purchase {
-
-        position: absolute;
-        right: 16px;
-        bottom: 12px;
-        padding: 4px 32px 4px 12px;
-
-        &:hover {
-            @media (min-width: 768px) {
-                background-color: $color-gray;
-            }
-        }
-
-        @media (min-width: 768px) {
-            display: inline-block;
-            position: static;
-            width: 70px;
-            height: 24px;
-            cursor: pointer;
-        }
-
-    }
-
     &__text {
         font-size: 14px;
         line-height: 20px;
@@ -175,16 +90,5 @@ $color-gray: #7E7E82;
         margin-right: 16px;
         background: url('../img/icon-go.svg') no-repeat 50%;
         vertical-align: middle;
-    }
-
-    &__table-header {
-        display: none;
-
-        @media (min-width: 768px) {
-            display: table-row;
-            background-color: $color-bg-light;
-            height: 40px;
-            color: $color-gray;
-        }
     }
 }
