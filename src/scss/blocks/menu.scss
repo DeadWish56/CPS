@@ -11,7 +11,7 @@ $color-text: #1B1C21;
             padding: 24px 0 24px 24px;
         }
 
-        @media (min-width: 1120px) {
+        @media (min-width: 1366px) {
             padding: 42px 32px 0 32px;
             position: relative;
             display: flex;
@@ -42,48 +42,6 @@ $color-text: #1B1C21;
         }
     }
 
-    &__nav {
-        position: relative;
-    }
-
-    &__nav-list {
-        display: flex;
-        overflow-x: scroll;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        margin-left: 16px;
-        align-items: center;
-        margin-bottom: 24px;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            width: 25px;
-            height: 40px;
-            background: linear-gradient(270deg, $color-bg-light 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-
-            @media (min-width: 1366px) {
-                display: none;
-            }
-        }
-
-        @media (min-width: 768px) {
-            margin-left: 24px;
-            margin-bottom: 24px;
-        }
-
-        @media (min-width: 1366px) {
-            flex-wrap: wrap;
-            margin-left: 32px;
-            margin-bottom: 5px;
-            overflow-x: auto;
-        }
-    }
 
     &__help-item:not(:last-of-type) {
         @media (min-width: 1366px) {
@@ -106,32 +64,6 @@ $color-text: #1B1C21;
             padding: 0;
             border: none;
             background-color: transparent;
-        }
-    }
-
-    &__nav-link {
-        white-space: nowrap;
-        border: none;
-        padding: 8px 16px 8px 16px;
-        color: $color-gray;
-        border: 2px solid transparent;
-
-
-        &:hover {
-            border: 2px solid $border-menu;
-            border-radius: 6px;
-            background-color: $color-white;
-
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-
-        @media (min-width: 1120px) {
-            white-space: wrap;
-            padding: 9px 22px;
-            margin-top: 8px;
         }
     }
 }

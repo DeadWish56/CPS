@@ -3,7 +3,7 @@ const openButton = document.querySelector('.btn__icon--burger');
 const closeButton = document.querySelector('.btn__icon--close');
 export const modalMenu = document.querySelector('.modal-menu');
 const menuWindow = document.querySelector('.modal-menu__window')
-const overlay = document.querySelector('.modal__wrapper');
+const overlay = document.querySelector('.modal-menu__wrapper');
 
 const openModalMenu = function () {
     modalMenu.classList.add('modal-menu--display')

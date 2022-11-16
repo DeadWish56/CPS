@@ -4,6 +4,66 @@
 		margin: 0;
 		padding: 0;
 		display: flex;
+
+		&--scroll {
+			display: flex;
+			overflow-x: scroll;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+			margin-left: 16px;
+			align-items: center;
+			margin-bottom: 24px;
+	
+			&::-webkit-scrollbar {
+				display: none;
+			}
+	
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				width: 25px;
+				height: 40px;
+				background: linear-gradient(270deg, $color-bg-light 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+	
+				@media (min-width: 1366px) {
+					display: none;
+				}
+			}
+		
+			@media (min-width: 768px) {
+				margin-left: 24px;
+				margin-bottom: 24px;
+			}
+	
+			@media (min-width: 1366px) {
+				flex-wrap: wrap;
+				margin-left: 32px;
+				margin-bottom: 5px;
+				overflow-x: auto;
+			}
+			
+		}
+
+		&--column {
+			flex-direction: column;
+			margin-top: 12px;
+			position: relative;
+			overflow: hidden;
+			align-items: flex-start;
+		}
+	}
+
+	&__item {
+		&--main {
+			margin-left: 16px;
+			margin-bottom: 15px;
+
+			@media (min-width: 360px) {
+				margin-left: 24px;
+			}
+
+		}
 	}
 
 	&__link {
@@ -14,10 +74,60 @@
 		letter-spacing: -0.2px;
 		transition: opacity 500ms;
 		text-decoration: none;
-		color: $color-text;
+		color: $color-gray;
+		white-space: nowrap;
+		padding: 8px 16px 8px 16px;
+		border: 2px solid transparent;
+
+		@media (min-width: 1366px) {
+			white-space: wrap;
+			padding: 9px 22px;
+			margin-top: 8px;
+		}
 
 		&:hover {
-			opacity: 0.5;
+			border: 2px solid $border-menu;
+			border-radius: 6px;
+			background-color: $color-white;
+		}
+
+		&--main {
+			height: 32px;
+			font-weight: 500;
+			padding: 0;
+			color: $color-text;
+			border: none;
+			margin: 0;
+
+			&:hover {
+				opacity: 0.5;
+				border: none;
+				border-radius: 0;
+				background-color: transparent;
+			}
+		}
+
+		&--active {
+			color: $color-gray;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			font-weight: 500;
+
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&::before {
+				content: "";
+				height: 32px;
+				position: absolute;
+				border-left: 8px solid $color-decoration;
+				border-radius: 4px;
+				left: -4px;
+				vertical-align: middle;
+			}
 		}
 	}
 }

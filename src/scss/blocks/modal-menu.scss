@@ -64,53 +64,6 @@ $color-decoration: #41F6D7;
         margin-left: auto;
     }
 
-    &__nav-list {
-        flex-direction: column;
-        margin-top: 12px;
-        position: relative;
-        overflow: hidden;
-        align-items: flex-start;
-    }
-
-    &__nav-item {
-        margin-left: 16px;
-        margin-bottom: 15px;
-
-        @media (min-width: 360px) {
-            margin-left: 24px;
-        }
-    }
-
-    &__nav-link {
-        display: block;
-        height: 32px;
-        font-weight: 500;
-        color: $color-text;
-
-        &--active {
-            color: $color-gray;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            font-weight: 500;
-
-
-            &:hover {
-                opacity: 1;
-            }
-
-            &::before {
-                content: "";
-                height: 32px;
-                position: absolute;
-                border-left: 8px solid $color-decoration;
-                border-radius: 4px;
-                left: -4px;
-                vertical-align: middle;
-            }
-        }
-    }
-
     &__footer {
         margin: 12px 0 32px 16px;
 
