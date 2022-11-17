@@ -16,7 +16,7 @@ for (let i = 0; i < buttons.length; i++) {
 
     if (buttonIcon.classList.contains('btn__expand--rotate')) {
       buttonText.textContent = 'Скрыть';
-    } else if (buttonText.classList.contains('about__btn-text')) {
+    } else if (button.classList.contains('about__btn')) {
       buttonText.textContent = 'Читать далее';
     } else {
       buttonText.textContent = 'Показать все';

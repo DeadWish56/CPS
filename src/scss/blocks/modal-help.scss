@@ -46,9 +46,12 @@
 
         &--display {
             display: none;
+            visibility: hidden;
+            transition: 1s ease;
 
             @media (min-width: 768px) {
                 display: block;
+                visibility: visible;
                 position: absolute;
                 top: 24px;
                 right: 472px;
