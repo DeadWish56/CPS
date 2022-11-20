@@ -481,15 +481,19 @@
   .submit:hover {
     background-color: #7E7E82; }
 
-.showmore-btn {
+.showmore-btn--display {
   display: none; }
   @media (min-width: 768px) {
-    .showmore-btn {
-      display: inline-block;
-      margin: 12px 0 32px 24px; } }
-  @media (min-width: 1120px) {
-    .showmore-btn {
-      margin: 12px 0 40px 32px; } }
+    .showmore-btn--display {
+      display: block; } }
+
+@media (min-width: 768px) {
+  .showmore-btn--margin {
+    margin: 12px 0 32px 24px; } }
+
+@media (min-width: 1120px) {
+  .showmore-btn--margin {
+    margin: 12px 0 40px 32px; } }
 
 .logo {
   transition: opacity 500ms; }
@@ -941,10 +945,13 @@
       .modal-help__close-btn {
         display: none; } }
     .modal-help__close-btn--display {
-      display: none; }
+      display: none;
+      visibility: hidden;
+      transition: 1s ease; }
       @media (min-width: 768px) {
         .modal-help__close-btn--display {
           display: block;
+          visibility: visible;
           position: absolute;
           top: 24px;
           right: 472px;
