@@ -1,5 +1,13 @@
 .showmore-btn {
 
+    &--display {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;            
+        }
+    }
+
     &--margin {
 
         @media (min-width: 768px) {
